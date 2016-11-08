@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Required meta tags-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <!-- Your app title -->
+  <title>My App</title>
+  <!-- Path to Framework7 Library CSS, iOS Theme -->
+  <link rel="stylesheet" href="css/framework7.ios.min.css">
+  <!-- Path to Framework7 color related styles, iOS Theme -->
+  <link rel="stylesheet" href="css/framework7.ios.colors.min.css">
+  <!-- Path to your custom app styles-->
+  <link rel="stylesheet" href="css/my-app.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet"> 
+</head>
+<body>
+  <!-- Status bar overlay for full screen mode (PhoneGap) -->
+  <div class="statusbar-overlay"></div>
+
+  <!-- Views -->
+  <div class="views tabs">
+    <!-- Your main view -->
+    <div id="view-1" class="view view-main tab active">
+      <!-- Pages -->
+      <div class="pages">
+        <div class="page" data-page="view-main">
+          <div class="page-content">
+
+            <div class="swiper-container">
+              <!-- Slides wrapper -->
+              <div class="swiper-wrapper">
+
+                <!-- Swipe Slides -->
+                <div class="swiper-slide">
+
+                  <img src="img/Onboardingimg1.jpg" class="slideBase">
+                  <div class="slideWrap">
+                    <div class="slideBG">
+                      <img src="img/logo.png" class="OnboardingLogo">
+                      <h1 class="headerLogo">Tripper</h1>
+                      <p class="OnboardingP"><b>Discover</b> the ultimate travel experience from tourists around the world</p>
+                      <a href="#" class="notificationButton confirm-ok-cancel">Allow Tripper to display an awesome trip nearby you</a>
+                      <p class="OnboardingP"><u>Deny</u></p>
+
+                      <a href="#view-2" class="SignupLoginButton SignUpButton tab-link">Sign Up</a>
+                      <a href="#view-3" class="SignupLoginButton loginButton tab-link">Login</a>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="swiper-slide slide2">
+                  <img src="img/Onboardingimg2.jpg" class="slideBase">
+                  <div class="slideBG">
+                    <img src="img/logo.png" class="OnboardingLogo">
+                    <h1 class="headerLogo">Tripper</h1>
+                    <p class="OnboardingP"><b>Follow</b> your favorite tourists and get their latest trip experience.</p>
+                    <a href="#" class="notificationButton open-3-modal">Allow Tripper to notify new trips and activities</a>
+                    <p class="OnboardingP"><u>Deny</u></p>
+
+                    <a href="#view-2" class="SignupLoginButton SignUpButton tab-link">Sign Up</a>
+                    <a href="#view-3" class="SignupLoginButton loginButton tab-link">Login</a>
+                  </div>
+                </div>
+
+                <div class="swiper-slide slide3">
+                  <img src="img/Onboardingimg3.jpg" class="slideBase">
+                  <div class="slideBG">
+                    <img src="img/logo.png" class="OnboardingLogo">
+                    <h1 class="headerLogo">Tripper</h1>
+                    <p class="OnboardingP"><b>Share</b> your trip experience after get back from the trip. Your trip experience will become an inspiration for other tourists around the world.</p>
+
+                    <a href="#view-2" class="SignupLoginButton SignUpButton addMargin tab-link">Sign Up</a>
+                    <a href="#view-3" class="SignupLoginButton loginButton addMargin tab-link">Login</a>
+                  </div>
+                </div>
+
+                <div class="swiper-slide slide4">
+                  <img src="img/Onboardingimg4.jpg" class="slideBase">
+                  <div class="slideBG">
+                    <img src="img/logo.png" class="OnboardingLogo">
+                    <h1 class="headerLogo">Tripper</h1>
+                    <h2 class="h2Header">Let’s get started</h2>
+                    <p class="OnboardingP">You can sign up for free! or login using email or facebook account.</p>
+
+                    <a href="#view-2" class="SignupLoginButton SignUpButton addMargin tab-link">Sign Up</a>
+                    <a href="#view-3" class="SignupLoginButton loginButton addMargin tab-link">Login</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Pagination, if required -->
+              <div class="swiper-pagination"></div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- view-2 Sign Up -->
+    <div id="view-2" class="view tab">
+      <div class="pages">
+        <div class="page" data-page="view2">
+          <div class="page-content">
+            <img src="img/OnboardingSignup.jpg" class="slideBase">
+            <div class="slideBG slideBG2">
+              <img src="img/logo.png" class="OnboardingLogo2">
+              <h2 id="onboardh1" class="headerLogo">Sign Up</h2>
+              
+              <a href="#view-4" class="facebookButton tab-link">Sign Up with Facebook</a>
+              <h3 id="or"><span>Or</span></h3>
+
+              <div class="item-input tripper-input1">
+                <input type="text" placeholder="Username" class="input-font">
+              </div>   
+              <div class="item-input tripper-input">
+                <input type="email" placeholder="Email" class="input-font">
+              </div>   
+              <div class="item-input tripper-input">
+                <input type="password" placeholder="Password (at least 6 characters)" class="input-font">
+              </div>     
+
+              <a href="#view-4" class="SignUpButton signUp tab-link">Sign Up</a>
+
+              <a href="#view-1" class="cancelButton tab-link"><u>Cancel</u></a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+
+    <!-- view-3 Login -->
+    <div id="view-3" class="view tab">
+      <div class="pages">
+        <div class="page" data-page="view3">
+          <div class="page-content">
+            <img src="img/OnboardingSignin.jpg" class="slideBase">
+            <div class="slideBG slideBG2">
+              <img src="img/logo.png" class="OnboardingLogo2">
+              <h2 id="onboardh1" class="headerLogo">Login</h2>
+              
+              <a href="#view-4" class="facebookButton tab-link">Login with Facebook</a>
+              <h3 id="or"><span>Or</span></h3>
+
+              <div class="item-input tripper-input1">
+                <input type="text" placeholder="Username or Email" class="input-font">
+              </div>   
+              <div class="item-input tripper-input">
+                <input type="password" placeholder="Password" class="input-font">
+              </div>     
+
+              <a href="#view-4" class="SignUpButton signUp login tab-link">Login</a>
+
+              <a href="#view-1" class="cancelButton tab-link buttonMargin"><u>Forgot Password?</u></a>
+
+              <a href="#view-1" class="cancelButton tab-link buttonMargin"><u>Cancel</u></a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+
+    <!-- view-4 Personalize -->
+    <div id="view-4" class="view tab">
+      <!-- Top Navbar-->
+      <div class="navbar">
+        <div class="navbar-inner">
+          <div class="left">
+            <a href="index.html" class="link later">Do it later</a>
+          </div>
+          <div class="center"><img src="img/logo.png" class="navLogo"></div>
+          <div class="right">
+            <a href="index.html" class="link Tripper-theme"><span>Finish</span><i class="icon icon-arrow-right"></i></a>
+            
+          </div>
+        </div>
+      </div>
+      <!-- /End of Top Navbar-->          
+
+      <!-- Now we need additional "navbar-through" and "toolbar-through" classes on Pages -->
+      <div class="pages navbar-through toolbar-through">
+        <div data-page="view4" class="page no-toolbar">
+          <div class="page-content whiteBackground">
+            <div class="introContent">
+              <h2>Almost There!</h2>
+              <p>Choose at least 2 interest trips<br> to set up your Trips Feed</p>
+            </div>
+
+            <div class="content-block">
+              <div class="row">
+                <div class="col-50"><img src="img/Hiking.jpg" class="tripCat"></div>
+                <div class="col-50"><img src="img/Culture.jpg" class="tripCat"></div>
+              </div>
+              <div class="row margin3vw">
+                <div class="col-50"><img src="img/Events_Festival.jpg" class="tripCat"></div>
+                <div class="col-50"><img src="img/Nature.jpg" class="tripCat"></div>
+              </div>
+              <div class="row margin3vw">
+                <div class="col-50"><img src="img/Honeymoon.jpg" class="tripCat"></div>
+                <div class="col-50"><img src="img/Solo_Travel.jpg" class="tripCat"></div>
+              </div>
+              <div class="row margin3vw">
+                <div class="col-50"><img src="img/Photography.jpg" class="tripCat"></div>
+                <div class="col-50"><img src="img/Dining.jpg" class="tripCat"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>  
+
+  </div>
+
+  <!-- Path to Framework7 Library JS-->
+  <script type="text/javascript" src="js/framework7.min.js"></script>
+  <!-- Path to your app js-->
+  <script type="text/javascript" src="js/my-app.js"></script>
+</body>
+</html> 

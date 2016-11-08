@@ -1,0 +1,287 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css');
+
+.whiteBackground{
+  background-color: white;
+}
+
+.tripper-navbar{
+	background: #4A90E2;
+	color: white;
+}
+
+.Tripper-banner{
+	width: 100%;
+	height: auto;
+	position: relative; 
+}
+
+h3 { 
+  position: absolute;
+  text-align: center;
+  top: 190px; 
+  left: 0; 
+  width: 100%; 
+}
+
+.Tripper-card{
+	margin: 10px 0;
+	border-radius: 0;
+
+}
+
+/*Onbording Style sheet*/
+.coverImage{
+	width: 100%;
+	height: auto;
+}
+
+.swiper-container {
+  height: 100%;
+}
+.swiper-slide {
+  background:#fff;
+}
+.swiper-slide span {
+  text-align:center;
+  display:block;
+  margin:20px;
+  font-size:21px;
+}
+
+.slideBase{
+  width: 100%;
+  height: auto;
+}
+
+.slideBG{
+  position: absolute; 
+  top: 10vw; 
+  height: 110vw;
+  border-radius: 1vw;
+  background-color: rgba(255, 255, 255, 0.9);
+  text-align:center;
+  margin: 0 10%;
+}
+
+.slideBG2{
+  height: 135vw;
+
+}
+
+.OnboardingLogo{
+  width: 30%;
+  margin-top: 10vw;
+}
+
+.OnboardingLogo2{
+  width: 20%;
+  margin-top: 3vw;
+}
+
+.headerLogo{
+  font-family: 'Roboto', sans-serif;
+  font-size: 8vw;
+}
+
+#onboardh1{
+  margin-top: 0;
+  font-size: 6vw;
+}
+
+.h2Header{
+  margin: 10px 10px;
+}
+
+.OnboardingP{
+  margin: 0 20px;
+  font-family: Roboto;
+  font-size: 4vw;
+}
+
+.notificationButton {
+  background-color: #0099DE; 
+  border: none;
+  color: white;
+  margin: 20px 20px;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 1vw;
+  font-size: 4vw; font-family: 'Roboto', sans-serif;
+}
+
+
+/*Modify pagination bullet*/
+span.swiper-pagination-bullet{
+  background: white;
+  opacity: 1;
+}
+
+span.swiper-pagination-bullet.swiper-pagination-bullet-active{
+  background: #0099DE;
+}
+
+.swiper-pagination{
+  margin-bottom: 20vw;
+}
+
+.SignupLoginButton{
+  border-radius: 1vw;
+  text-align: center;
+  text-decoration: none;
+  margin: 20vw 2vw;
+  /*margin: 50px 10px;*/
+  padding: 15px 42px;
+  display: inline-block;
+  font-size: 4vw; font-family: 'Roboto', sans-serif;
+  position: relative;
+}
+
+.addMargin{
+  margin-top: 39vw;
+  /*  margin-top: 120px;*/
+}
+
+hr.line{
+  border-bottom: : 1px solid #8c8b8b;
+  margin: 0 8vw;
+}
+
+.orSignup{
+  margin-top: 5vw;
+}
+
+.signUp{
+  border-radius: 1vw;
+  text-align: center;
+  text-decoration: none;
+  margin: 2vw;
+  padding: 15px 42px;
+  display: inline-block;
+  font-size: 4vw; font-family: 'Roboto', sans-serif;
+  width: 20vw;
+}
+
+.facebookButton{
+  color: white;
+  background-color: #4267B2;
+  /*  margin: 2vw;*/
+  padding: 15px 40px;
+  width: 60vw;
+  border-radius: 1vw;
+}
+
+.SignUpButton{
+  color: white;
+  background-color: rgba(255, 75, 56, 0.9);
+}
+
+.cancelButton{
+  margin: 10px;
+  font-family: Roboto;
+  font-size: 4vw;
+  display: block;
+}
+
+.loginButton{
+  color: #030303;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.login{
+  background-color: #0099DE;
+}
+
+.tripper-input{
+  margin: 10px;
+  display: inline-block;
+}
+
+.tripper-input1{
+  margin-top: 40px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.input-font{
+  font-size: 4vw; font-family: 'Roboto', sans-serif;
+  padding: 10px;
+  width: 60vw;
+}
+
+::-webkit-input-placeholder { font-style:italic; color:#939393; }
+::-moz-placeholder { font-style:italic; color:#939393; } /* firefox 19+ */
+:-ms-input-placeholder { font-style:italic; color:#939393; } /* ie */
+input:-moz-placeholder { font-style:italic; color:#939393; }
+
+.buttonMargin{
+  margin-top: 25px;
+}
+
+/*or line*/
+#or {
+    font-size: : 2px; 
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    color: #333;
+    margin-top: -15px;
+    text-align: center;
+    z-index: 1;
+    /*    position: block;*/
+}
+
+h3:before {
+    border-top: 1px solid #dfdfdf;
+    content:"";
+    margin: 0 auto; /* this centers the line to the full width specified */
+    position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
+    top: 15px; left: 0; right: 0; bottom: 0;
+    width: 80%;
+    z-index: -1;
+}
+
+h3 span { 
+    /* to hide the lines from behind the text, you have to set the background color the same as the container */ 
+/*    background-color: rgba(255, 255, 255, 0.4);*/
+    padding: 0 10px; 
+}
+
+
+
+/*Personalize page customize*/
+.later{
+  color: #FE4B38;
+}
+
+.Tripper-theme{
+  color: #0099DE;
+
+}
+
+.icon-arrow-right{
+  font-weight: 800;
+}
+
+.navLogo{
+  width: 15%;
+  margin: 0 auto;
+}
+
+.introContent{
+  text-align: center;
+}
+.introContent p{
+  font-size: 5vw;
+  color: #333;
+}
+
+.tripCat{
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.margin5vw{
+  margin-top: 3vw;
+}
