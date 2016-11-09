@@ -60,6 +60,10 @@ i.tabbar-demo-icon-4 {
 
 /*custom*/
 
+.whiteBg{
+  background-color: white;
+}
+
 .custom-content{
   padding: 0px;
   margin-bottom: 50px;
@@ -212,3 +216,18 @@ i.tabbar-demo-icon-4 {
 .tabbar a.active {
   filter: grayscale(0%) !important;
 }
+
+
+/*Bookmark*/
+#searchBox {
+  background-color: white;
+}
+
+.searchbar input[type=search]  {
+  font-size: 16px;
+  font-style: italic;
+  background-color: #F0F0F0;
+  border-radius: 3px;
+  background-size: 15px 15px;
+}
+
