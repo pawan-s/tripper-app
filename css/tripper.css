@@ -41,7 +41,7 @@ i.tabbar-demo-icon-4 {
 .banner-text{
   font-size: larger;
   text-align: center;
-  font-family: Roboto;
+  font-family: 'Roboto';
   margin-bottom: 0px;
 }
 
@@ -148,13 +148,13 @@ i.tabbar-demo-icon-4 {
 .top-name .first-name{
   font-size: 5vw; 
   line-height: 10vw; 
-  font-family: Roboto; 
+  font-family: 'Roboto'; 
   color: #4A90E2;
 }
 .top-name .top-date{
   font-size: 3.5vw; 
   line-height: 1.5vw; 
-  font-family: Roboto;
+  font-family: 'Roboto';
 }
 
 .top-right{
@@ -172,7 +172,7 @@ i.tabbar-demo-icon-4 {
 .top-tag{
   font-size: 3.5vw;
   line-height: 1.5vw;
-  font-family: Roboto; 
+  font-family: 'Roboto'; 
   margin-top:2vw;
 }
 
@@ -199,7 +199,7 @@ i.tabbar-demo-icon-4 {
   justify-content: center; 
   display: flex; 
   font-size:4vw; 
-  font-family: Roboto;
+  font-family: 'Roboto';
 }
 .bottom-icon{
   width: 7vw; 
@@ -214,7 +214,7 @@ i.tabbar-demo-icon-4 {
 .bottom-location{
   font-size: 5.5vw; 
   padding-left: 6.7vw; 
-  font-family: Roboto;
+  font-family: 'Roboto';
 }
 
 .navbar-through .with-subnavbar .page-content{
@@ -299,9 +299,21 @@ i.tabbar-demo-icon-4 {
 
 
 .link-theme{
-  color: #0099DE;
+  color: #4A90E2;
   font-size: 16px;
   font-weight: 600;
   margin-right: 10px;
 
+}
+
+.search-card{
+
+}
+
+.searchFont{
+  margin: 10px 10px;
+  font-family: 'roboto';
+  font-size: 14px;
+  font-weight: 600;
+  color: #4A90E2;
 }
