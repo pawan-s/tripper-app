@@ -279,19 +279,29 @@ i.tabbar-demo-icon-4 {
   filter: grayscale(0%) !important;
 }
 
-
 /*Bookmark*/
-#searchBox {
-  background-color: white;
-}
-
 .searchbar input[type=search]  {
   font-size: 16px;
   background-color: #F0F0F0;
   border-radius: 3px;
   background-size: 15px 15px;
+  border-color: rgba(164, 164, 164, 0.5);
 }
 
 .subtractMargin{
   margin-top: 10px;
+}
+
+/*search*/
+#searchBox input[type=search]{
+  width: 95%;
+}
+
+
+.link-theme{
+  color: #0099DE;
+  font-size: 16px;
+  font-weight: 600;
+  margin-right: 10px;
+
 }

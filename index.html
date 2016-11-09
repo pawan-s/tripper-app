@@ -385,16 +385,33 @@
 <!-- Search page-->
 <div id="view-2" class="view tab">
     <!-- We can make with view with navigation, let's add Top Navbar-->
-    <div class="navbar">
+<!--     <div class="navbar">
       <div class="navbar-inner">
-        <!-- <div class="center sliding">Second View</div> -->
+
         <form class="">
           <input type="text" name="search" placeholder="Search..">
       </form>
   </div>
-</div>
-<div class="pages navbar-through">
+</div> -->
+<div class="pages">
   <div data-page="index-2" class="page">
+
+      <!-- Search bar -->
+      <form style="background-color:white;" id="searchBox" class="searchbar searchbar-init" data-search-list=".list-block-search" data-search-in=".item-title" data-found=".searchbar-found" data-not-found=".searchbar-not-found">
+        <div class="searchbar-input">
+            <input type="search" placeholder="Where do you want to go?">
+            <a href="#" class="searchbar-clear"></a>
+        </div>
+        <a href="#" class="searchbar-cancel">Cancel</a>
+        <div class="right">
+        <a href="#" class="link link-theme"><span>Filter</span></a>
+            
+        </div>
+    </form>
+    <div class="searchbar-overlay">
+        
+    </div>
+    <!-- End Search bar -->
     <div class="page-content">
       <div class="content-block">
         <p>This is search</p>
@@ -408,16 +425,16 @@
 <div id="view-3" class="view tab">
       <div class="pages">
           <div data-page="index-3" class="page">
-
-            <form id="searchBox" class="searchbar searchbar-init" data-search-list=".list-block-search" data-search-in=".item-title" data-found=".searchbar-found" data-not-found=".searchbar-not-found">
+          <!-- Search bar -->
+            <form style="background-color:white;" class="searchbar searchbar-init" data-search-list=".list-block-search" data-search-in=".item-title" data-found=".searchbar-found" data-not-found=".searchbar-not-found">
                 <div class="searchbar-input">
                     <input type="search" placeholder="Search in bookmarks">
                     <a href="#" class="searchbar-clear"></a>
                 </div>
                 <a href="#" class="searchbar-cancel">Cancel</a>
             </form>
-
             <div class="searchbar-overlay"></div>
+            <!-- End Search bar -->
             <div class="page-content">
             <div class="content-block custom-content subtractMargin">
                 <!--the fourth card for Luella-->
