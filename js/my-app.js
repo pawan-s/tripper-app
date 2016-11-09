@@ -61,6 +61,10 @@ $$('.open-3-modal').on('click', function () {
   })
 });
 
+$$('.alert-text-title').on('click', function () {
+    myApp.alert('You can choose interests trip at Setting on Me page', 'Tripper');
+});
+
 
 // Option 1. Using page callback for page (for "about" page in this case) (recommended way):
 myApp.onPageInit('about', function (page) {
