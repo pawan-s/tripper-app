@@ -13,8 +13,10 @@ var view2 = myApp.addView('#view-2', {
 var view3 = myApp.addView('#view-3');
 var view4 = myApp.addView('#view-4');
 var view5 = myApp.addView('#view-5');
-var view6 = myApp.addView('#view-6', {
-    // Because we use fixed-through navbar we can enable dynamic navbar
-    dynamicNavbar: true
-});
+// var view6 = myApp.addView('#view-6', {
+//     // Because we use fixed-through navbar we can enable dynamic navbar
+//     dynamicNavbar: true
+// });
+
+myApp.onPageInit('view-6', function (page) {});
 
