@@ -5,10 +5,10 @@ var myApp = new Framework7();
 var $$ = Dom7;
 
 // Add views
-var mainView = myApp.addView('.searchView', {
-  // Because we want to use dynamic navbar, we need to enable it for this view:
-  dynamicNavbar: true
-})
+// var mainView = myApp.addView('.searchView', {
+//   // Because we want to use dynamic navbar, we need to enable it for this view:
+//   dynamicNavbar: true
+// })
 
 var view1 = myApp.addView('#view-1');
 var view2 = myApp.addView('#view-2', {
