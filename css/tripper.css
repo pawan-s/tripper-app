@@ -309,9 +309,24 @@
 {
   margin-top: 3vw;
 }
+
 .tripCat{
   width: 100%;
   height: auto;
   margin: 0 auto;
+}
+
+.sortButton{
+  border-radius: 1vw;
+  border-color: #4A90E2;
+  border-width: 5px;
+  text-align: center;
+  text-decoration: none;
+  margin: 2vw;
+  padding: 10px 40px;
+  display: inline-block;
+  font-size: 4vw; font-family: 'Roboto', sans-serif;
+  width: 20vw;
+
 }
 
