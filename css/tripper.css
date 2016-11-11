@@ -318,15 +318,33 @@
 
 .sortButton{
   border-radius: 1vw;
-  border-color: #4A90E2;
-  border-width: 5px;
+  border: 2px solid #4A90E2;
   text-align: center;
   text-decoration: none;
+  outline: none;
   margin: 2vw;
   padding: 10px 40px;
   display: inline-block;
   font-size: 4vw; font-family: 'Roboto', sans-serif;
   width: 20vw;
 
+}
+
+.select{
+  color: white !important;
+  background-color: #4A90E2 !important;
+}
+
+.sortBy{
+  margin:2vw ;
+  font-size: 5vw; font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: #4A4A4A;
+}
+
+.filterBy{
+  font-size: 5vw; font-family: 'Roboto', sans-serif;
+  color: #4A4A4A;
+  font-weight: 500;
 }
 
