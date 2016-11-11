@@ -1,6 +1,9 @@
 /* Your app custom files in this file */
 /* Tab bar icons */
 
+.whiteBackground{
+  background-color: white;
+}
 
 .banner-img{
   width : 100%;
@@ -348,3 +351,24 @@
   font-weight: 500;
 }
 
+/*Activities*/
+
+.heart-icon{
+  margin-top: 1vw;
+  width: 5vw;
+}
+
+.activity{
+  margin-left: 18vw;
+}
+
+.overflow{
+  overflow: auto;
+}
+
+.subTitle{
+  margin-left: 2vw;
+  font-size: 3vw;
+  font-weight: 400;
+  color: #4A4A4A
+}
