@@ -1,4 +1,5 @@
 // Initialize your app
+
 var myApp = new Framework7();
 
 // Export selectors engine
@@ -23,5 +24,7 @@ var view5 = myApp.addView('#view-5');
 //     dynamicNavbar: true
 // });
 
-
-
+$$('#link-filter').on('click', function (e) {
+    
+    view2.router.loadPage('filter.html');
+});
