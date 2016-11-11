@@ -87,7 +87,7 @@
 
                                             </div>
                                             <a href="filter.html">
-                                            <img src="img/trip1yosemite.jpg" width="100%">
+                                                <img src="img/trip1yosemite.jpg" width="100%">
                                             </a>
                                             <div class="card-bottom">
                                                 <div class="bottom-location">Road Trip in Yosemite, CA</div>
@@ -240,8 +240,8 @@
                             <!--Popular-->
                             <div id="tab2" class="page-content tab">
                                 <div class="content-block custom-content">
-                                   <!--the fourth card for Luella-->
-                                   <div class="card">
+                                 <!--the fourth card for Luella-->
+                                 <div class="card">
                                     <div class="card-content custom-card">
                                         <div class="card-top">
                                             <div class="top-image4"></div>
@@ -385,12 +385,13 @@
 </div>
 
 <!-- Search page-->
-<div id="view-2" class="view searchView tab">
-    <div class="pages">
-        <div data-page="index-2" class="page">
+<div id="view-2" class="view tab">
 
-          <!-- Search bar -->
-          <form style="background-color:white;" id="searchBox" class="searchbar searchbar-init" data-search-list=".list-block-search" data-search-in=".item-title" data-found=".searchbar-found" data-not-found=".searchbar-not-found">
+    <div class="navbar">
+      <div class="navbar-inner navbar-on-center" style="background-color:white;">
+        <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
+        <!-- Search bar -->
+        <form style="background-color:white;" id="searchBox" class="searchbar searchbar-init center sliding " data-search-list=".list-block-search" data-search-in=".item-title" data-found=".searchbar-found" data-not-found=".searchbar-not-found">
             <div class="searchbar-input">
                 <input type="search" placeholder="Where do you want to go?">
                 <a href="#" class="searchbar-clear"></a>
@@ -401,26 +402,31 @@
                 <a href="filter.html" class="link-theme">Filter</a>
             </div>
         </form>
-        <div class="searchbar-overlay">
-        </div>
+<!--         <div class="searchbar-overlay">
+</div> -->
 
-        <!-- End Search bar -->
+<!-- End Search bar -->
+        </div>
+    </div>
+
+
+<div class="pages navbar-through toolbar-through">
+    <div data-page="index-2" class="page">
         <div class="page-content">
 
             <div class="list-block cards-list custom-content search-card subtractMargin">
                 <ul class="">
                     <li class="card ">
                         <div class="card-header searchFont">Search Nearby
-                        <br>
-                        Philadelphia PA
-                        <div class="right"><img style="width:50%;" src="img/navigation.png"></div>
+                            <br>
+                            Philadelphia PA
+                            <div class="right"><img style="width:50%;" src="img/navigation.png"></div>
 
                         </div>
 
                     </li>
 
                     <div class="searchFont"><span>Recent Searches</span></div>
-                    
                     
                     <li class="card">
                         <div class="card-content">
@@ -447,7 +453,7 @@
             </div>
 
         </div>
-</div>
+    </div>
 </div>
 </div>
 <!-- Bookmarks page -->
