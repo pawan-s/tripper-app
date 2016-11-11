@@ -280,5 +280,33 @@
   color: #4A90E2;
 }
 
+/*Filter page*/
 
+.navHeader{
+  font-family: 'roboto';
+  font-size: 5vw;
+  font-weight: 500;
+  color: #4A90E2;
+}
+
+.navLeft
+{
+  font-family: 'roboto';
+  font-size: 4vw;
+  font-weight: 400;
+  color: #4A90E2;
+}
+
+.navRight
+{
+  font-family: 'roboto';
+  font-size: 4vw;
+  font-weight: 400;
+  color: #4A90E2;
+}
+
+.margin3vw
+{
+  margin-top: 3vw;
+}
 
