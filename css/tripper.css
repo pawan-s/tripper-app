@@ -408,10 +408,34 @@
 }
 
 .dayTabs{
-  font-size: 4vw; font-family: 'Roboto', sans-serif;
-  text-align: center;
   background-color: #4A90E2;
   color: white;
-  padding: 7px 25px;
+  padding: 7px 15px;
+  text-align: center;
 
+}
+.dayHeader1{
+  display: inline-block;
+  margin-left: 18vw;
+  font-size: 4vw; font-family: 'Roboto', sans-serif;
+}
+
+.daynavRight{
+  float: right;
+  display: inline-block;
+  font-size: 3vw;
+  text-decoration: underline;
+}
+
+.dayHeader2{
+  display: inline-block;
+  margin-right: 18vw;
+  font-size: 4vw; font-family: 'Roboto', sans-serif;
+}
+
+.daynavLeft{
+  float: left;
+  display: inline-block;
+  font-size: 3vw;
+  text-decoration: underline;
 }
