@@ -412,6 +412,7 @@
   color: white;
   padding: 7px 15px;
   text-align: center;
+  vertical-align: text-bottom;
 
 }
 .dayHeader1{
@@ -425,6 +426,7 @@
   display: inline-block;
   font-size: 3vw;
   text-decoration: underline;
+
 }
 
 .dayHeader2{
@@ -438,4 +440,5 @@
   display: inline-block;
   font-size: 3vw;
   text-decoration: underline;
+
 }
