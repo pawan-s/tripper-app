@@ -418,13 +418,14 @@
 .dayHeader1{
   display: inline-block;
   margin-left: 18vw;
-  font-size: 4vw; font-family: 'Roboto', sans-serif;
+  font-size: 5vw; font-family: 'Roboto', sans-serif;
+  font-weight: 500;
 }
 
 .daynavRight{
   float: right;
   display: inline-block;
-  font-size: 3vw;
+  font-size: 4vw;
   text-decoration: underline;
 
 }
@@ -432,13 +433,14 @@
 .dayHeader2{
   display: inline-block;
   margin-right: 18vw;
-  font-size: 4vw; font-family: 'Roboto', sans-serif;
+  font-size: 5vw; font-family: 'Roboto', sans-serif;
+  font-weight: 500;
 }
 
 .daynavLeft{
   float: left;
   display: inline-block;
-  font-size: 3vw;
+  font-size: 4vw;
   text-decoration: underline;
 
 }
