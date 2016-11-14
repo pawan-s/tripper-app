@@ -507,3 +507,7 @@
   text-decoration: underline;
   display: inline-block;
 }
+
+.subMargin30{
+  margin-bottom: 10px;
+}
