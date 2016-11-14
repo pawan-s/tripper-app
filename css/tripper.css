@@ -442,3 +442,46 @@
   text-decoration: underline;
 
 }
+
+.tripIcons{
+  width: 6vw;
+  margin: 0px 10px 0px 0px;
+  display: inline-block;
+}
+
+.detailHeader{
+    display: inline-block;
+    font-size: 5vw; font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.detailDate{
+    display: inline-block;
+    font-size: 3vw; font-family: 'Roboto', sans-serif;
+}
+
+.alignCenter{
+  vertical-align: middle;
+}
+
+.mapIcon{
+  width: 8vw;
+  float: left;
+  display: inline-block;
+}
+
+.marginTop2vw{
+  margin-top: 2vw;
+}
+
+.detailP{
+  font-size: 4.5vw; font-family: 'Roboto', sans-serif;
+  color: #4A4A4A;
+  letter-spacing: 0.5px;
+
+}
+
+.tripImage{
+  width: 100%;
+  height: auto;
+}
