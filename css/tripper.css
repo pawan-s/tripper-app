@@ -465,7 +465,7 @@
 }
 
 .mapIcon{
-  width: 8vw;
+  width: 9vw;
   float: left;
   display: inline-block;
 }
@@ -484,4 +484,6 @@
 .tripImage{
   width: 100%;
   height: auto;
+  margin-top: -20px
+  margin-bottom: -20px;
 }
