@@ -491,4 +491,16 @@
 
 .tips{
   background-color: rgba(74,144,226,0.15);
+  font-size: 4.5vw; font-family: 'Roboto', sans-serif;
+  color: #4A4A4A;
+  letter-spacing: 0.5px;
+}
+
+.marginBottom{
+  margin-bottom: 30vw;
+
+}
+
+.readMoreBtn{
+  text-decoration: underline;
 }
