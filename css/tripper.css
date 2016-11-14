@@ -478,12 +478,17 @@
   font-size: 4.5vw; font-family: 'Roboto', sans-serif;
   color: #4A4A4A;
   letter-spacing: 0.5px;
+  margin:0px 0px;
 
 }
 
 .tripImage{
   width: 100%;
   height: auto;
-  margin-top: -20px
-  margin-bottom: -20px;
+/*  margin-top: -20px
+  margin-bottom: -20px;*/
+}
+
+.tips{
+  background-color: rgba(74,144,226,0.15);
 }
