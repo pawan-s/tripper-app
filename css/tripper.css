@@ -505,4 +505,5 @@
 
 .readMoreBtn{
   text-decoration: underline;
+  display: inline-block;
 }
