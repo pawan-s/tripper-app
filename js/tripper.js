@@ -21,3 +21,4 @@ var view5 = myApp.addView('#view-5');
 //   nextButton: '.swiper-button-next',
 //   prevButton: '.swiper-button-prev',
 // }); 
+
