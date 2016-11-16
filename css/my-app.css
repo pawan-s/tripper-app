@@ -285,3 +285,144 @@ h3 span {
 .margin5vw{
   margin-top: 3vw;
 }
+
+/*Trip category filter buttons*/
+input[type=checkbox] {
+display:none;
+}
+
+#cat1 + label
+{
+background: url("../img/Hiking.jpg") no-repeat;
+background-size: 100%;
+height: 45vw;
+width: 100%;
+display:inline-block;
+}
+#cat1:checked + label
+{
+background: url("../img/HikingSelected.jpg") no-repeat;
+background-size: 100%;
+height: 45vw;
+width: 100%;
+display:inline-block;
+}
+
+#cat2 + label
+{
+background: url("../img/Culture.jpg") no-repeat;
+background-size: 100%;
+height: 45vw;
+width: 100%;
+display:inline-block;
+}
+#cat2:checked + label
+{
+background: url("../img/CultureSelected.jpg") no-repeat;
+background-size: 100%;
+height: 45vw;
+width: 100%;
+display:inline-block;
+}
+
+#cat3 + label
+{
+background: url("../img/Events_Festival.jpg") no-repeat;
+background-size: 100%;
+height: 45vw;
+width: 100%;
+display:inline-block;
+}
+#cat3:checked + label
+{
+background: url("../img/Events_FestivalSelected.jpg") no-repeat;
+background-size: 100%;
+height: 45vw;
+width: 100%;
+display:inline-block;
+}
+
+#cat4 + label
+{
+background: url("../img/Nature.jpg") no-repeat;
+background-size: 100%;
+height: 45vw;
+width: 100%;
+display:inline-block;
+}
+#cat4:checked + label
+{
+background: url("../img/NatureSelected.jpg") no-repeat;
+background-size: 100%;
+height: 45vw;
+width: 100%;
+display:inline-block;
+}
+
+#cat5 + label
+{
+background: url("../img/Honeymoon.jpg") no-repeat;
+background-size: 100%;
+height: 45vw;
+width: 100%;
+display:inline-block;
+}
+#cat5:checked + label
+{
+background: url("../img/HoneymoonSelected.jpg") no-repeat;
+background-size: 100%;
+height: 45vw;
+width: 100%;
+display:inline-block;
+}
+
+#cat6 + label
+{
+background: url("../img/Solo_Travel.jpg") no-repeat;
+background-size: 100%;
+height: 45vw;
+width: 100%;
+display:inline-block;
+}
+#cat6:checked + label
+{
+background: url("../img/Solo_TravelSelected.jpg") no-repeat;
+background-size: 100%;
+height: 45vw;
+width: 100%;
+display:inline-block;
+}
+
+#cat7 + label
+{
+background: url("../img/Photography.jpg") no-repeat;
+background-size: 100%;
+height: 45vw;
+width: 100%;
+display:inline-block;
+}
+#cat7:checked + label
+{
+background: url("../img/PhotographySelected.jpg") no-repeat;
+background-size: 100%;
+height: 45vw;
+width: 100%;
+display:inline-block;
+}
+
+#cat8 + label
+{
+background: url("../img/Dining.jpg") no-repeat;
+background-size: 100%;
+height: 45vw;
+width: 100%;
+display:inline-block;
+}
+#cat8:checked + label
+{
+background: url("../img/DiningSelected.jpg") no-repeat;
+background-size: 100%;
+height: 45vw;
+width: 100%;
+display:inline-block;
+}
