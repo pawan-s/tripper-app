@@ -326,54 +326,44 @@
   margin: 0 auto;
 }
 
+/*Filter by Region buttons*/
 input[type=checkbox] {
 display:none;
 }
  
-input[type=checkbox] + label
+#region1 + label
 {
 background: url("../img/Africa.jpg") no-repeat;
 background-size: 100%;
 height: 30vw;
 width: 100%;
 display:inline-block;
-/*padding: 0 0 0 0px;*/
 }
-input[type=checkbox]:checked + label
+#region1:checked + label
 {
 background: url("../img/AfricaSelected.jpg") no-repeat;
 background-size: 100%;
 height: 30vw;
 width: 100%;
 display:inline-block;
-/*padding: 0 0 0 0px;*/
 }
 
-/*#test + #testLabel{
-  background: black;
-  border: 2px solid #4A90E2;
-  display: inline-block;
-
+#region2 + label
+{
+background: url("../img/Asia.jpg") no-repeat;
+background-size: 100%;
+height: 30vw;
+width: 100%;
+display:inline-block;
 }
-
-input[type=checkbox]{
-  display: none;
+#region2:checked + label
+{
+background: url("../img/AsiaSelected.jpg") no-repeat;
+background-size: 100%;
+height: 30vw;
+width: 100%;
+display:inline-block;
 }
-
-#checkbtn label{
-  display: inline-block;
-
-  background: url("../img/Africa.jpg") no-repeat;
-  width: 100%;
-  height: auto;
-  margin: 0 auto;
-}
-
-#checkbtn input:checked + label{
-  background: url("../img/AfricaSelected.jpg") no-repeat;
-}*/
-
-
 
 .sortButton{
   border-radius: 1vw;
