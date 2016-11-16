@@ -365,6 +365,245 @@ width: 100%;
 display:inline-block;
 }
 
+#region3 + label
+{
+background: url("../img/Australia.jpg") no-repeat;
+background-size: 100%;
+height: 30vw;
+width: 100%;
+display:inline-block;
+}
+#region3:checked + label
+{
+background: url("../img/AustraliaSelected.jpg") no-repeat;
+background-size: 100%;
+height: 30vw;
+width: 100%;
+display:inline-block;
+}
+
+#region4 + label
+{
+background: url("../img/Central_America.jpg") no-repeat;
+background-size: 100%;
+height: 30vw;
+width: 100%;
+display:inline-block;
+}
+#region4:checked + label
+{
+background: url("../img/Central_AmericaSelected.jpg") no-repeat;
+background-size: 100%;
+height: 30vw;
+width: 100%;
+display:inline-block;
+}
+
+#region5 + label
+{
+background: url("../img/Europe.jpg") no-repeat;
+background-size: 100%;
+height: 30vw;
+width: 100%;
+display:inline-block;
+}
+#region5:checked + label
+{
+background: url("../img/EuropeSelected.jpg") no-repeat;
+background-size: 100%;
+height: 30vw;
+width: 100%;
+display:inline-block;
+}
+
+#region6 + label
+{
+background: url("../img/Middle_East.jpg") no-repeat;
+background-size: 100%;
+height: 30vw;
+width: 100%;
+display:inline-block;
+}
+#region6:checked + label
+{
+background: url("../img/Middle_EastSelected.jpg") no-repeat;
+background-size: 100%;
+height: 30vw;
+width: 100%;
+display:inline-block;
+}
+
+#region7 + label
+{
+background: url("../img/North_America.jpg") no-repeat;
+background-size: 100%;
+height: 30vw;
+width: 100%;
+display:inline-block;
+}
+#region7:checked + label
+{
+background: url("../img/North_AmericaSelected.jpg") no-repeat;
+background-size: 100%;
+height: 30vw;
+width: 100%;
+display:inline-block;
+}
+
+#region8 + label
+{
+background: url("../img/South_America.jpg") no-repeat;
+background-size: 100%;
+height: 30vw;
+width: 100%;
+display:inline-block;
+}
+#region8:checked + label
+{
+background: url("../img/South_AmericaSelected.jpg") no-repeat;
+background-size: 100%;
+height: 30vw;
+width: 100%;
+display:inline-block;
+}
+
+/*Trip category filter buttons*/
+#cat1 + label
+{
+background: url("../img/Hiking.jpg") no-repeat;
+background-size: 100%;
+height: 45vw;
+width: 100%;
+display:inline-block;
+}
+#cat1:checked + label
+{
+background: url("../img/HikingSelected.jpg") no-repeat;
+background-size: 100%;
+height: 45vw;
+width: 100%;
+display:inline-block;
+}
+
+#cat2 + label
+{
+background: url("../img/Culture.jpg") no-repeat;
+background-size: 100%;
+height: 45vw;
+width: 100%;
+display:inline-block;
+}
+#cat2:checked + label
+{
+background: url("../img/CultureSelected.jpg") no-repeat;
+background-size: 100%;
+height: 45vw;
+width: 100%;
+display:inline-block;
+}
+
+#cat3 + label
+{
+background: url("../img/Events_Festival.jpg") no-repeat;
+background-size: 100%;
+height: 45vw;
+width: 100%;
+display:inline-block;
+}
+#cat3:checked + label
+{
+background: url("../img/Events_FestivalSelected.jpg") no-repeat;
+background-size: 100%;
+height: 45vw;
+width: 100%;
+display:inline-block;
+}
+
+#cat4 + label
+{
+background: url("../img/Nature.jpg") no-repeat;
+background-size: 100%;
+height: 45vw;
+width: 100%;
+display:inline-block;
+}
+#cat4:checked + label
+{
+background: url("../img/NatureSelected.jpg") no-repeat;
+background-size: 100%;
+height: 45vw;
+width: 100%;
+display:inline-block;
+}
+
+#cat5 + label
+{
+background: url("../img/Honeymoon.jpg") no-repeat;
+background-size: 100%;
+height: 45vw;
+width: 100%;
+display:inline-block;
+}
+#cat5:checked + label
+{
+background: url("../img/HoneymoonSelected.jpg") no-repeat;
+background-size: 100%;
+height: 45vw;
+width: 100%;
+display:inline-block;
+}
+
+#cat6 + label
+{
+background: url("../img/Solo_Travel.jpg") no-repeat;
+background-size: 100%;
+height: 45vw;
+width: 100%;
+display:inline-block;
+}
+#cat6:checked + label
+{
+background: url("../img/Solo_TravelSelected.jpg") no-repeat;
+background-size: 100%;
+height: 45vw;
+width: 100%;
+display:inline-block;
+}
+
+#cat7 + label
+{
+background: url("../img/Photography.jpg") no-repeat;
+background-size: 100%;
+height: 45vw;
+width: 100%;
+display:inline-block;
+}
+#cat7:checked + label
+{
+background: url("../img/PhotographySelected.jpg") no-repeat;
+background-size: 100%;
+height: 45vw;
+width: 100%;
+display:inline-block;
+}
+
+#cat8 + label
+{
+background: url("../img/Dining.jpg") no-repeat;
+background-size: 100%;
+height: 45vw;
+width: 100%;
+display:inline-block;
+}
+#cat8:checked + label
+{
+background: url("../img/DiningSelected.jpg") no-repeat;
+background-size: 100%;
+height: 45vw;
+width: 100%;
+display:inline-block;
+}
+
 .sortButton{
   border-radius: 1vw;
   border: 2px solid #4A90E2;
