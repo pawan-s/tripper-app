@@ -851,14 +851,14 @@ display:inline-block;
 }
 
 .editProfile{
-  width: 15vw;
-  height: 15vw;
+  width: 13vw;
+  height: 13vw;
   position: absolute;
   display: inline-block;
   background: url("../icons/editprofile.png")no-repeat;
   top: 3vw;
   right: 3vw;
-  background-size: 15vw;
+  background-size: 13vw;
 }
 
 .profileTable{
