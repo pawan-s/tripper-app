@@ -812,3 +812,11 @@ display:inline-block;
 .subMargin10{
   margin-bottom: 10px;
 }
+
+/*Me page*/
+
+.coverimg{
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
