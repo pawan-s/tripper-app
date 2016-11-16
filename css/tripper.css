@@ -820,3 +820,44 @@ display:inline-block;
   height: auto;
   margin: 0 auto;
 }
+
+.coverOverlay{
+  position: absolute; 
+  top: 10vw; 
+  height: 60vw;
+  width: 80%;
+  border-radius: 1vw;
+  background-color: rgba(255, 255, 255, 0.9);
+  text-align:center;
+  margin: 0 10%;
+}
+
+.profilePic{
+  width: 23vw; 
+  height: 23vw; 
+  border-radius: 50%; 
+  background: url("../img/roger.jpg");
+  margin: 5vw auto;
+  margin-bottom: 2vw;
+/*  margin-left: 2vw; 
+  margin-top: 1vw; */
+  background-size: 23vw;
+}
+
+.first-name{
+  font-size: 5vw; 
+  line-height: 10vw; 
+  font-family: 'Roboto'; 
+  color: #4A90E2;
+}
+
+.editProfile{
+  width: 15vw;
+  height: 15vw;
+  position: absolute;
+  display: inline-block;
+  background: url("../icons/editprofile.png")no-repeat;
+  top: 3vw;
+  right: 3vw;
+  background-size: 15vw;
+}
