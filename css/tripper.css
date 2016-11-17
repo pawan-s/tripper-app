@@ -882,3 +882,40 @@ display:inline-block;
   border-left: 1px solid #979797;
   border-right: 1px solid #979797;
 }
+
+.profileBtn{
+  width: 80%;
+  margin: 2vw 10%;
+  border: 2px solid #4A90E2;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 1vw;
+  background: white;
+  border-radius: 
+  font-size: 5vw; 
+  line-height: 11vw; 
+  font-family: 'Roboto';
+  color: #4A90E2;
+  outline: none;
+  display: inline-block;
+
+}
+
+/*.profileBtn a::after{
+  position: absolute;
+  background: url("../icons/add.png") no-repeat;
+  background-size: 5vw;
+}*/
+
+
+.profileBtn + span::after{
+  background: url("../icons/add.png") no-repeat;
+  background-size: 6vw;
+}
+
+.publicIcon{
+  position: relative;
+  display: inline-block;
+  background: url("../icons/public.png") no-repeat;
+  background-size: 6vw;
+}
