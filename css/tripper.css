@@ -920,16 +920,10 @@ display:inline-block;
 
 
 .publicIcon{
-  position: relative;
-  display: inline-block;
-  background: url("../icons/public.png") no-repeat;
-  background-size: 5vw;
+  background: url("../icons/world.png") no-repeat right;
+  background-size: 4vw;
+  padding-right: 7vw;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
 }
 
-/*.custom-badge{
-  background: red; 
-  margin-left: 1vw;
-  font-size: 5vw; 
-  text-align: center;
-  font-family: 'Roboto';
-}*/
