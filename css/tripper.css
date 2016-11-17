@@ -873,6 +873,11 @@ display:inline-block;
   color: #4A90E2;
 }
 
+.profileNum{
+  margin-top: 0; 
+  font-weight: 700;
+}
+
 .tablePadding{
   padding-left: 3vw;
   padding-right: 3vw;
