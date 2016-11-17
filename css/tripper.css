@@ -891,12 +891,12 @@ display:inline-block;
   text-decoration: none;
   border-radius: 1vw;
   background: white;
-  border-radius: 
-  font-size: 5vw; 
-  line-height: 11vw; 
-  font-family: 'Roboto';
+  padding-top: 3vw;
+  padding-bottom: 3vw;
+  font-size: 4vw;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
   color: #4A90E2;
-  outline: none;
   display: inline-block;
   
 }
