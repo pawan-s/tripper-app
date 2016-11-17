@@ -13,6 +13,8 @@ var view2 = myApp.addView('#view-2', {
 var view3 = myApp.addView('#view-3');
 var view4 = myApp.addView('#view-4');
 var view5 = myApp.addView('#view-5');
+// create trip views
+var view7 = myApp.addView('#view-7');
 
 // var mySwiper = myApp.swiper('.swiper-container', {
 //   pagination: '.swiper-pagination',
