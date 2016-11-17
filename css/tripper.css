@@ -898,6 +898,13 @@ display:inline-block;
   color: #4A90E2;
   outline: none;
   display: inline-block;
+  
+}
+
+.iconadd{
+  background: url("../icons/add.png") no-repeat right;
+  background-size: 6vw;
+  padding-right: 36px;
 
 }
 
