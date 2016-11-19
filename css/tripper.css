@@ -5,6 +5,10 @@
   background-color: white;
 }
 
+.Display-InlineBlock{
+  display: inline-block;
+}
+
 .banner-img{
   width : 100%;
 /*  height: auto;*/
@@ -950,9 +954,9 @@ display:inline-block;
   border-radius: 0px;
  }
 
-#popTool {
+/*#popTool {
   margin-top: 14vw;
- }
+ }*/
 
  .trashIcon{
   background: url("../icons/garbage.png") no-repeat right;
@@ -966,7 +970,7 @@ display:inline-block;
   background: url("../icons/addVideos.png") no-repeat right;
   background-size: 5vw;
   padding-right: 7vw;
-  padding-top: 2vw;
+/*  padding-top: 2vw;*/
   margin-right: 2vw;
 }
 
@@ -974,7 +978,15 @@ display:inline-block;
   background: url("../icons/public.png") no-repeat right;
   background-size: 5vw;
   padding-right: 7vw;
-  padding-top: 2vw;
+/*  padding-top: 3vw;*/
+  margin-right: 2vw;
+}
+
+ .DayIcon{
+  background: url("../icons/day.png") no-repeat right;
+  background-size: 5vw;
+  padding-right: 7vw;
+/*  padding-top: 3vw;*/
   margin-right: 2vw;
 }
 
