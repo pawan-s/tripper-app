@@ -958,6 +958,22 @@ display:inline-block;
   margin-right: 2vw;
 }
 
+ .videoIcon{
+  background: url("../icons/addVideos.png") no-repeat right;
+  background-size: 5vw;
+  padding-right: 7vw;
+  padding-top: 2vw;
+  margin-right: 2vw;
+}
+
+ .globeIcon{
+  background: url("../icons/public.png") no-repeat right;
+  background-size: 5vw;
+  padding-right: 7vw;
+  padding-top: 2vw;
+  margin-right: 2vw;
+}
+
 #next-btn{
   color: #4A90E2 !important;
   font-size: 5vw;
