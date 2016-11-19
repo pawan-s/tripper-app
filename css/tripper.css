@@ -950,6 +950,10 @@ display:inline-block;
   border-radius: 0px;
  }
 
+#popTool {
+  margin-top: 14vw;
+ }
+
  .trashIcon{
   background: url("../icons/garbage.png") no-repeat right;
   background-size: 5vw;
