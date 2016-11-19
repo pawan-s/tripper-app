@@ -1028,7 +1028,7 @@ display:inline-block;
   position: relative;
 }
 
-#country {
+#select-tripCat {
     width: 100%;
     height: 10vw;
     font-size: 4vw; font-family: 'Roboto', sans-serif;
@@ -1039,5 +1039,17 @@ display:inline-block;
   color: #4A4A4A;
   margin-top: 5vw;
   margin-bottom: 2vw;
+  font-weight: 500;
+
+}
+.overviewarea{
+  width: 99%;
+  height: 100vw;
+  font-size: 4vw; font-family: 'Roboto', sans-serif;
+  border-color: rgba(226,226,226,0.2);
+  border-width: 1px;
+  overflow: scroll;
+  overflow-x: hidden;
+/*  height: 50vw;*/
 
 }

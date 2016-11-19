@@ -14,7 +14,6 @@ var view3 = myApp.addView('#view-3');
 var view4 = myApp.addView('#view-4');
 var view5 = myApp.addView('#view-5');
 
-
 var calendarRange = myApp.calendar({
     input: '#calendar-range',
     dateFormat: 'M dd yyyy',
@@ -38,20 +37,6 @@ $$('.ac-1').on('click', function () {
     ];
     myApp.actions(buttons);
 });
-
-var pickerDevice = myApp.picker({
-    input: '#picker-device',
-    cols: [
-        {
-            textAlign: 'center',
-            values: ['iPhone 4', 'iPhone 4S', 'iPhone 5', 'iPhone 5S', 'iPhone 6', 'iPhone 6 Plus', 'iPad 2', 'iPad Retina', 'iPad Air', 'iPad mini', 'iPad mini 2', 'iPad mini 3']
-        }
-    ]
-});
-
-function togglePicker(){
-	pickerDevice.open(); // open Picker
-}
  
 // javascript for createtrip.html -> to switch toolbar
 function toggle_visibility(id1,id2) {
