@@ -958,3 +958,18 @@ display:inline-block;
   margin-right: 2vw;
 }
 
+#next-btn{
+  color: #4A90E2 !important;
+  font-size: 5vw;
+  filter: grayscale(0%);
+}
+
+.createTool img{
+  vertical-align: middle;
+  height: 36px;
+}
+
+.createToolBar{
+  padding-left: 6vw;
+  padding-right: 6vw;
+}

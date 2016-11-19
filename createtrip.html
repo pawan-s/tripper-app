@@ -1,45 +1,74 @@
 
-
 <!-- Create Trip Page -->
+<!-- <div class="views">
+  <div id="view-7" class="view tab active"> -->
+    <!--     <div class="pages"> -->
+    <div class="page no-tabbar">
+      <div class="searchbar whiteBackground">
+        <div class="navbar-inner">
+          <div class="left">
+            <a href="#" class="back link">
+              <i class="icon icon-arrow-left"></i>
+              <span class="navLeft" style="line-height: 4vw;">Me</span>
+            </a>
+          </div>
+          <div class="center sliding navHeader" style="padding-left: 6vw;">Create Trip</div>
+          <div class="right"><a href="#" class="open-popover link navRight" data-popover=".popover-links">Options <i><span class="optionsicon"></span></i></a></div>
+        </div>
+      </div>
+
+      <div class="searchbar-overlay"></div>
+      <div class="page-content">
+
+        
 
 
+        <!-- Tabs, tabs wrapper -->
 
+        <div class="tabs">
+          <!-- Tab 1, active by default -->
+          <div id="createTrip1" class="tab active">
+            <div class="content-block">
 
-<div class="views">
-  <div id="view-7" class="view tab active">
-    <div class="pages">
-      <div data-page="index-7" class="page no-tabbar">
-        <div class="searchbar whiteBackground">
-          <div class="navbar-inner">
-            <div class="left">
-              <a href="#" class="back link">
-                <i class="icon icon-arrow-left"></i>
-                <span class="navLeft" style="line-height: 4vw;">Me</span>
-              </a>
+            <p id="p555">This is tab 1 content</p>
+              ...
             </div>
-            <div class="center sliding navHeader" style="padding-left: 6vw;">Create Trip</div>
-            <div class="right"><a href="#" class="open-popover link navRight" data-popover=".popover-links">Options <i><span class="optionsicon"></span></i></a></div>
           </div>
-        </div>
+          <!-- Tab 2 -->
+          <div id="createTrip2" class="tab">
+            <div class="page-content">
+            <a href="#createTrip1" class="tab-link" onclick="toggle_visibility('overviewtoolbar','addtriptoolbar');">Back to overview</a>
+            <div class="content-block">
+              <p>This is tab 2 content</p>
+              ...
+            </div>
 
-        <div class="searchbar-overlay"></div>
-
-
-
-        <div class="page-content">
-        <a href="#view-8" class="tab-link">next view</a>
-
-        </div>
-
-        <div class="toolbar">
-          <div class="toolbar-inner">
-            <a href="#" class="link"></a>
-            <a href="#" class="link"></a>
-            <a href="#" class="link" style="color:#4A90E2;">Add Day</a>
+            </div>
           </div>
-        </div>
-      </div> 
-    </div>
-  </div>
 
-</div>
+        </div>
+
+
+      </div>
+
+      <div id="overviewtoolbar" class="toolbar" style="display: block;">
+        <div class="toolbar-inner">
+          <a href="#" class="link"></a>
+          <a href="#createTrip2" id="next-btn" class="tab-link navRight" onclick="toggle_visibility('overviewtoolbar','addtriptoolbar');">Next <i class="icon icon-arrow-right" style="display: inline-block;"></i></a>
+        </div>
+      </div>
+
+      <div id="addtriptoolbar" class="toolbar" style="display: none;">
+        <div class="toolbar-inner createToolBar">
+          <a href="#createTrip1" class="tab-link createTool"><img src="icons/addTime.png"></a>
+          <a href="#" class="tab-link createTool"><img src="icons/addLocation.png"></a>
+          <a href="#" class="tab-link createTool"><img src="icons/addPhoto.png"></a>
+          <a href="#" class="tab-link createTool"><img src="icons/add-Tips.png" style="padding-top:2px; "></a>
+          <a href="#" class="tab-link createTool"><img src="icons/more.png" style="height: 30px; padding-top: 3px; "></a>
+        </div>
+      </div>
+    </div> 
+    <!--     </div> -->
+<!--   </div>
+
+</div> -->
