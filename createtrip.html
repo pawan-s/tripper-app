@@ -30,49 +30,65 @@
             <div class="content-block subtractMargin" style="margin-bottom: 2vw;">
 
               <p class="createTitle">Trip Title</p>
-                <input type="text" placeholder="" class="createInput">
+              <input type="text" placeholder="" class="createInput">
 
-                <p class="createTitle">Trip Category</p>
-                <select id="select-tripCat" name="trip-category">
-                  <option></option>
-                  <option>Hiking</option>
-                  <option>Culture</option>
-                  <option>Events and Festival</option>
-                  <option>Nature</option>
-                  <option>Honeymoon</option>
-                  <option>Solo Travel</option>
-                  <option>Photography</option>
-                  <option>Dining</option>
-                </select>
-              </form>
+              <p class="createTitle">Trip Category</p>
+              <select id="select-tripCat" name="trip-category">
+                <option></option>
+                <option>Hiking</option>
+                <option>Culture</option>
+                <option>Events and Festival</option>
+                <option>Nature</option>
+                <option>Honeymoon</option>
+                <option>Solo Travel</option>
+                <option>Photography</option>
+                <option>Dining</option>
+              </select>
+              <!--               </form> -->
 
               <p class="createTitle">Trip Date Range</p>
               <input type="text" placeholder="" class="createInput">
-
               <p class="createTitle">Trip Overview</p>
-
-            <form>
-
+              <!--             <form> -->
             </div>
-            <textarea id="textarea2" class="overviewarea"></textarea>
+            <textarea class="overviewarea"></textarea>
           </div>
-
         </div>
+
         <!-- Create Trip Tab -->
         <div id="createTrip2" class="tab">
           <div class="page-content">
             <a href="#createTrip1" class="tab-link" onclick="toggle_visibility('overviewtoolbar','addtriptoolbar');">Back to overview</a>
-            <div class="content-block">
-              <p>This is tab 2 content</p>
-              ...
-            </div>
 
+            <div class="swiper-container swiper-init">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide whiteBackground"> 
+                  <div class="dayTabs">
+                    <div class="dayHeader1">Day 1</div>
+                    <div class="daynavRight">Next Day <i class="icon icon-arrow-right"></i></div>
+                  </div>
+                  <div class="page-content">
+                    Day1
+
+                  </div>
+
+
+                </div>
+                <div class="swiper-slide">
+                  <div class="dayTabs">
+                    <div class="dayHeader2">Day 2</div>
+                    <div class="daynavLeft"><i class="icon icon-arrow-left"></i>Prev. Day </div>
+                  </div>
+                  <div class="page-content">
+                    Day2
+
+                  </div>
+                </div>
+              </div>
+            </div>  <!-- check --> 
           </div>
         </div>
-
       </div>
-
-
     </div>
 
     <div id="overviewtoolbar" class="toolbar" style="display: block;">
