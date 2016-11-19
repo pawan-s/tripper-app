@@ -14,6 +14,13 @@ var view3 = myApp.addView('#view-3');
 var view4 = myApp.addView('#view-4');
 var view5 = myApp.addView('#view-5');
 
+
+var calendarRange = myApp.calendar({
+    input: '#calendar-range',
+    dateFormat: 'M dd yyyy',
+    rangePicker: true
+});
+
 //action sheet buttons
 $$('.ac-1').on('click', function () {
     var buttons = [
@@ -42,6 +49,9 @@ var pickerDevice = myApp.picker({
     ]
 });
 
+function togglePicker(){
+	pickerDevice.open(); // open Picker
+}
  
 // javascript for createtrip.html -> to switch toolbar
 function toggle_visibility(id1,id2) {

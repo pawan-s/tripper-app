@@ -1,3 +1,4 @@
+  <script type="text/javascript" src="js/tripper.js"></script>
 
 <!-- Create Trip Page -->
     <div class="page no-tabbar">
@@ -15,7 +16,7 @@
       </div>
 
       <div class="searchbar-overlay"></div>
-      <div class="page-content">
+      <div class="page-content whiteBackground">
 
         <!-- Tabs, tabs wrapper -->
         <div class="tabs">
@@ -26,23 +27,33 @@
             <div class="upcoverbg"></div> 
             <a href="#" class="ac-1"><img src="icons/uploadimg.png" class="upcovericon"></a>
           </div>
-            <div class="content-block">
+            <div class="content-block subtractMargin">
+              
+              <div class="item-input">
+              <p>Trip Title</p>
+                <input type="text" placeholder="" class="createInput">
+              </div>
+
+              <div class="item-input">
+              <p>Trip Category</p>
+                <input type="text" placeholder="" class="createInput">
+              </div>
+
+              <div class="item-input">
+              <p>Trip Date Range</p>
+                <input type="text" placeholder="" class="createInput">
+              </div>
+
+              <form>
+  <select id="country" name="country">
+    <option value="au">Australia</option>
+    <option value="ca">Canada</option>
+    <option value="usa">USA</option>
+  </select>
+</form>
+
 
               <p id="p555">This is tab 1 content</p>
-
-              <div class="list-block">
-  <ul>
-    <li>
-      <div class="item-content">
-        <div class="item-inner">
-          <div class="item-input">
-            <input type="text" placeholder="Your iOS device" readonly id="picker-device">
-          </div>
-        </div>
-      </div>
-    </li>
-  </ul>
-</div> 
 
               ...
             </div>
@@ -83,3 +94,5 @@
         </div>
       </div>
     </div> 
+
+
