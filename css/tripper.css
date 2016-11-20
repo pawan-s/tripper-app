@@ -9,6 +9,14 @@
   color: #4A90E2;
 }
 
+.fontSize4vw{
+  font-size: 4vw;
+}
+
+.fontSize3vw{
+  font-size: 3vw;
+}
+
 .Display-InlineBlock{
   display: inline-block;
 }
