@@ -907,7 +907,6 @@ display:inline-block;
   font-family: 'Roboto', sans-serif;
   color: #4A90E2;
   display: inline-block;
-  
 }
 
 .iconadd{
@@ -1051,5 +1050,19 @@ display:inline-block;
   overflow: scroll;
   overflow-x: hidden;
 /*  height: 50vw;*/
+}
 
+.backOverview{
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  text-decoration: none;
+  background: #A6A6A6;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+  font-size: 4.5vw;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  display: inline-block;
 }

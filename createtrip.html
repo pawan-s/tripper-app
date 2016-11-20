@@ -1,4 +1,4 @@
-  <script type="text/javascript" src="js/tripper.js"></script>
+<!--   <script type="text/javascript" src="js/tripper.js"></script> -->
 
   <!-- Create Trip Page -->
   <div class="page no-tabbar">
@@ -44,48 +44,38 @@
                 <option>Photography</option>
                 <option>Dining</option>
               </select>
-              <!--               </form> -->
-
               <p class="createTitle">Trip Date Range</p>
               <input type="text" placeholder="" class="createInput">
               <p class="createTitle">Trip Overview</p>
-              <!--             <form> -->
             </div>
             <textarea class="overviewarea"></textarea>
           </div>
         </div>
 
-        <!-- Create Trip Tab -->
+        <!-- Create Trip Tab Day1-->
         <div id="createTrip2" class="tab">
           <div class="page-content">
-            <a href="#createTrip1" class="tab-link" onclick="toggle_visibility('overviewtoolbar','addtriptoolbar');">Back to overview</a>
+            <a href="#createTrip1" class="tab-link backOverview" onclick="toggle_visibility('overviewtoolbar','addtriptoolbar');"><i class="icon icon-arrow-left"></i><span>Back to overview</span></a>
+            <div class="dayTabs">
+              <div class="dayHeader1">Day 1</div>
+              <a href="#createTrip3" class="tab-link daynavRight" style="color: white;">Next Day <i class="icon icon-arrow-right"></i></a>
+            </div>
+            <div class="page-content">
+              
+            </div>
+          </div>
+        </div>
+        <!-- Create Trip Tab Day2-->
+        <div id="createTrip3" class="tab">
+          <div class="page-content">
+            <a href="#createTrip1" class="tab-link backOverview" onclick="toggle_visibility('overviewtoolbar','addtriptoolbar');"><i class="icon icon-arrow-left"></i><span>Back to overview</span></a>
+            <div class="dayTabs">
+              <div class="dayHeader2">Day 2</div>
+              <a href="#createTrip2" class="tab-link daynavLeft" style="color: white;"><i class="icon icon-arrow-left"></i>Prev. Day </a>
+            </div>
+            <div class="page-content">
 
-            <div class="swiper-container swiper-init">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide whiteBackground"> 
-                  <div class="dayTabs">
-                    <div class="dayHeader1">Day 1</div>
-                    <div class="daynavRight">Next Day <i class="icon icon-arrow-right"></i></div>
-                  </div>
-                  <div class="page-content">
-                    Day1
-
-                  </div>
-
-
-                </div>
-                <div class="swiper-slide">
-                  <div class="dayTabs">
-                    <div class="dayHeader2">Day 2</div>
-                    <div class="daynavLeft"><i class="icon icon-arrow-left"></i>Prev. Day </div>
-                  </div>
-                  <div class="page-content">
-                    Day2
-
-                  </div>
-                </div>
-              </div>
-            </div>  <!-- check --> 
+            </div>
           </div>
         </div>
       </div>
