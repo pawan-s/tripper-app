@@ -273,7 +273,8 @@
 
 .link-theme{
   color: #4A90E2;
-  font-size: 16px;
+  font-size: 5vw;
+  font-family: 'roboto';
   font-weight: 500;
   margin-right: 10px;
 
@@ -289,6 +290,13 @@
 
 /*Filter page*/
 
+#filterHeader{
+  font-family: 'roboto';
+  font-size: 5vw;
+  font-weight: 500;
+  color: #4A90E2;
+}
+
 .navHeader{
   font-family: 'roboto';
   font-size: 5vw;
@@ -299,22 +307,22 @@
 .navLeft
 {
   font-family: 'roboto';
-  font-size: 4vw;
+  font-size: 5vw;
   font-weight: 400;
   color: #4A90E2;
 }
 
 .arrowLeft
 {
-    font-size: 5vw;
+  font-size: 5vw;
   font-weight: 900;
-    color: #4A90E2;
+  color: #4A90E2;
 }
 
 .navRight
 {
   font-family: 'roboto';
-  font-size: 4vw;
+  font-size: 5vw;
   font-weight: 400;
   color: #4A90E2;
 }
