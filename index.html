@@ -1,709 +1,691 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <title>Tripper</title>
-    <!-- Path to Framework7 Library CSS-->
-    <link rel="stylesheet" href="css/framework7.ios.min.css">
-    <!-- Path to your custom app styles-->
-    <link rel="stylesheet" href="css/tripper.css">
-    <link rel="stylesheet" href="css/my-app.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>Tripper</title>
+	<!-- Path to Framework7 Library CSS-->
+	<link rel="stylesheet" href="css/framework7.ios.min.css">
+	<!-- Path to your custom app styles-->
+	<link rel="stylesheet" href="css/tripper.css">
+	<link rel="stylesheet" href="css/my-app.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
 </head>
 </head>
 <body>
-    <!-- Options Popover -->
-    <div class="popover popover-createoptions">
-      <div class="popover-angle" style="display: none;"></div>
-      <div class="popover-inner">
-        <div class="list-block">
-          <ul>
-            <li><a href="#" class="list-button item-link" style="color: #4A4A4A;">Save Draft</a></li>
-            <li><a href="#" class="list-button item-link" style="color: #4A4A4A;">Publish</a></li>
-            <li><a href="#" class="list-button item-link" style="color: #FE4B38; text-decoration: bold"> <i><span class="trashIcon"></span></i>Delete Trip</a></li>
-        </ul>
-    </div>
-</div>
-</div>
-<!-- Toolbar Popover -->
-<div id="popTool" class="popover popover-moretools">
-  <div class="popover-angle" style="display: none;"></div>
-  <div class="popover-inner">
-    <div class="list-block">
-      <ul>
-        <li><a href="#" class="list-button item-link" style="color: #4A4A4A; display: inline-block;"><i><span class="globeIcon"></span></i>Set Public</a>
-        <label class="label-switch" style="display: inline-block;">
-    <input type="checkbox" checked="checked" style="padding-bottom: 2vw;">
-    <div class="checkbox"></div>
-  </label>
-        </li>
-        <li><a href="#" class="list-button item-link" style="color: #4A4A4A;"><i><span class="DayIcon"></span></i>Add Day</a></li>
-        <li><a href="#" class="list-button item-link" style="color: #4A4A4A;"><i><span class="videoIcon"></span></i>Add Video</a></li>
-
-    </ul>
-</div>
-</div>
-</div>
-<!-- End Popover -->
-
-<!-- Status bar overlay for fullscreen mode-->
-<div class="statusbar-overlay"></div>
-<!-- Panels overlay-->
-<div class="panel-overlay"></div>
-<!-- Left panel with reveal effect-->
-<div class="panel panel-left panel-reveal">
-  <div class="content-block">
-    <p>Left panel content goes here</p>
-</div>
-</div>
-<!-- Right panel with cover effect-->
-<div class="panel panel-right panel-cover">
-  <div class="content-block">
-    <p>Right panel content goes here</p>
-</div>
-</div>
-<!-- Views, and they are tabs-->
-<!-- We need to set "toolbar-through" class on it to keep space for our tab bar-->
-<div class="views tabs toolbar-through">
-  <!-- Your first view, it is also a .tab and should have "active" class to make it visible by default-->
-  <div id="view-1" class="view view-main tab active">
-    <!-- Pages-->
-    <div class="pages">
-      <!-- Page, data-page contains page name-->
-      <div data-page="index-1" class="page">
-        <!-- Scrollable page content-->
-        <div class="page-content">
-
-            <!--banner image-->
-            <div style="background-color:white;">
-                <img src="img/banner.png" class="banner-img">
-                <p class="banner-text">Hello, Roger. we found<br>some trips you might like.</p>
-            </div>
-            <div class="blank-space">
-            </div>
-            <!--tab bar configuration-->
-            <div class="navbar navbar-home">
-                <div class="subnavbar sliding">
-                    <div class="buttons-row">
-                        <a href="#tab1" class="button active tab-link">Recent</a>
-                        <a href="#tab2" class="button tab-link">Popular</a>
-                        <a href="#tab3" class="button tab-link">Weekend</a>
-                        <a href="#tab4" class="button tab-link">Following</a>
-                    </div>
-                </div>
-            </div>
-
-            <!--tab bar content-->
-            <div class="pages navbar-through">
-                <div  class="page with-subnavbar">
-                    <div class="tabs-animated-wrap">
-                        <div class="tabs">
-
-                            <!--the first tab content-->
-                            <div id="tab1" class="page-content tab active">
-                                <div class="content-block custom-content">
-
-                                    <!--the first card for Alexa-->
-                                    <div class="card">
-                                        <div class="card-content custom-card">
-                                            <div class="card-top">
-                                                <div class="top-image"></div>
-                                                <div class="top-name">
-                                                    <div class="first-name">Alexa Roach</div>
-                                                    <div class="top-date">June 23</div>
-                                                </div>
-                                                <div class="top-right">
-                                                    <img src="img/arrow.png" class="top-arrow">
-                                                    <div class="top-tag">Tagged in Nature</div>
-                                                </div>
-
-                                            </div>
-                                            <img src="img/trip1yosemite.jpg" width="100%">
-                                            <div class="card-bottom">
-                                                <div class="bottom-location">Road Trip in Yosemite, CA</div>
-                                                <div class="bottom-data">
-                                                    <!--<img src="img/heart.png" class="bottom-icon">-->
-                                                    <div class="content-data"><img src="img/heart.png" class="bottom-icon">  33</div>
-                                                    <div class="content-data"><img src="img/comment.png" class="bottom-icon">  54</div>
-                                                    <div class="content-data"><img src="img/share.png" class="bottom-icon"></div>
-                                                    <div class="content-data"><img src="img/bookmark.png" class="bottom-icon1"></div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-
-
-                                    <!--the ad-->
-                                    <div class="card">
-                                        <div class="card-content custom-card">
-                                            <img src="img/SouthwestAd.jpg" width="100%">
-                                        </div>
-                                    </div>
-
-                                    <!--the second card for Roger-->
-                                    <div class="card">
-                                        <div class="card-content custom-card">
-                                            <div class="card-top">
-                                                <div class="top-image2"></div>
-                                                <div class="top-name">
-                                                    <div class="first-name">Roger Saanrinen</div>
-                                                    <div class="top-date">March 29</div>
-                                                </div>
-                                                <div class="top-right">
-                                                    <img src="img/arrow.png" class="top-arrow">
-                                                    <div class="top-tag">Tagged in Photography</div>
-                                                </div>
-
-                                            </div>
-                                            <a href="tripDC.html">
-                                                <img src="img/trip2washington.jpg" width="100%">
-                                            </a>
-                                            <div class="card-bottom">
-                                                <div class="bottom-location">Best of Sherry Blossom Views in DC</div>
-                                                <div class="bottom-data">
-                                                    <!--<img src="img/heart.png" class="bottom-icon">-->
-                                                    <div class="content-data"><img src="img/heart.png" class="bottom-icon">  32</div>
-                                                    <div class="content-data"><img src="img/comment.png" class="bottom-icon">  11</div>
-                                                    <div class="content-data"><img src="img/share.png" class="bottom-icon"></div>
-                                                    <div class="content-data"><img src="img/bookmark.png" class="bottom-icon1"></div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-
-                                    <!--the third card for Bernard-->
-                                    <div class="card">
-                                        <div class="card-content custom-card">
-                                            <div class="card-top">
-                                                <div class="top-image3"></div>
-                                                <div class="top-name">
-                                                    <div class="first-name">Bernard Alvey</div>
-                                                    <div class="top-date">May 5</div>
-                                                </div>
-                                                <div class="top-right">
-                                                    <img src="img/arrow.png" class="top-arrow">
-                                                    <div class="top-tag">Tagged in Backpacking</div>
-                                                </div>
-
-                                            </div>
-
-                                            <img src="img/trip3santorini.jpg" width="100%">
-                                            <div class="card-bottom">
-                                                <div class="bottom-location">Backpack Guide in Santorini, Greece</div>
-                                                <div class="bottom-data">
-                                                    <!--<img src="img/heart.png" class="bottom-icon">-->
-                                                    <div class="content-data"><img src="img/heart.png" class="bottom-icon">  23</div>
-                                                    <div class="content-data"><img src="img/comment.png" class="bottom-icon">  49</div>
-                                                    <div class="content-data"><img src="img/share.png" class="bottom-icon"></div>
-                                                    <div class="content-data"><img src="img/bookmark.png" class="bottom-icon1"></div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-
-                                    <!--the fourth card for Luella-->
-                                    <div class="card">
-                                        <div class="card-content custom-card">
-                                            <div class="card-top">
-                                                <div class="top-image4"></div>
-                                                <div class="top-name">
-                                                    <div class="first-name">Luella Wilmer</div>
-                                                    <div class="top-date">Feb 21</div>
-                                                </div>
-                                                <div class="top-right">
-                                                    <img src="img/arrow.png" class="top-arrow">
-                                                    <div class="top-tag">Tagged in Honeymoon</div>
-                                                </div>
-
-                                            </div>
-
-                                            <img src="img/trip4italy.jpg" width="100%">
-                                            <div class="card-bottom">
-                                                <div class="bottom-location">Romantic Guide in Venice</div>
-                                                <div class="bottom-data">
-                                                    <!--<img src="img/heart.png" class="bottom-icon">-->
-                                                    <div class="content-data"><img src="img/heart.png" class="bottom-icon">  47</div>
-                                                    <div class="content-data"><img src="img/comment.png" class="bottom-icon">  95</div>
-                                                    <div class="content-data"><img src="img/share.png" class="bottom-icon"></div>
-                                                    <div class="content-data"><img src="img/bookmarked.png" class="bottom-icon1"></div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-
-                                    <!--the fifth card for Mei-->
-                                    <div class="card">
-                                        <div class="card-content custom-card">
-                                            <div class="card-top">
-                                                <div class="top-image5"></div>
-                                                <div class="top-name">
-                                                    <div class="first-name">Mei Sung</div>
-                                                    <div class="top-date">Feb 2</div>
-                                                </div>
-                                                <div class="top-right">
-                                                    <img src="img/arrow.png" class="top-arrow">
-                                                    <div class="top-tag">Tagged in Dining</div>
-                                                </div>
-
-                                            </div>
-
-                                            <img src="img/trip5bangkok.jpg" width="100%">
-                                            <div class="card-bottom">
-                                                <div class="bottom-location">Amazing Floating Market in Thailand</div>
-                                                <div class="bottom-data">
-                                                    <!--<img src="img/heart.png" class="bottom-icon">-->
-                                                    <div class="content-data"><img src="img/heart.png" class="bottom-icon">  23</div>
-                                                    <div class="content-data"><img src="img/comment.png" class="bottom-icon">  13</div>
-                                                    <div class="content-data"><img src="img/share.png" class="bottom-icon"></div>
-                                                    <div class="content-data"><img src="img/bookmarked.png" class="bottom-icon1"></div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!--Popular-->
-                            <div id="tab2" class="page-content tab">
-                                <div class="content-block custom-content">
-                                   <!--the fourth card for Luella-->
-                                   <div class="card">
-                                    <div class="card-content custom-card">
-                                        <div class="card-top">
-                                            <div class="top-image4"></div>
-                                            <div class="top-name">
-                                                <div class="first-name">Luella Wilmer</div>
-                                                <div class="top-date">Feb 21</div>
-                                            </div>
-                                            <div class="top-right">
-                                                <img src="img/arrow.png" class="top-arrow">
-                                                <div class="top-tag">Tagged in Honeymoon</div>
-                                            </div>
-
-                                        </div>
-
-                                        <img src="img/trip4italy.jpg" width="100%">
-                                        <div class="card-bottom">
-                                            <div class="bottom-location">Romantic Guide in Venice</div>
-                                            <div class="bottom-data">
-                                                <!--<img src="img/heart.png" class="bottom-icon">-->
-                                                <div class="content-data"><img src="img/heart.png" class="bottom-icon">  47</div>
-                                                <div class="content-data"><img src="img/comment.png" class="bottom-icon">  95</div>
-                                                <div class="content-data"><img src="img/share.png" class="bottom-icon"></div>
-                                                <div class="content-data"><img src="img/bookmarked.png" class="bottom-icon1"></div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                                <!--the first card for Alexa-->
-                                <div class="card">
-                                    <div class="card-content custom-card">
-                                        <div class="card-top">
-                                            <div class="top-image"></div>
-                                            <div class="top-name">
-                                                <div class="first-name">Alexa Roach</div>
-                                                <div class="top-date">June 23</div>
-                                            </div>
-                                            <div class="top-right">
-                                                <img src="img/arrow.png" class="top-arrow">
-                                                <div class="top-tag">Tagged in Nature</div>
-                                            </div>
-
-                                        </div>
-
-                                        <img src="img/trip1yosemite.jpg" width="100%">
-                                        <div class="card-bottom">
-                                            <div class="bottom-location">Road Trip in Yosemite, CA</div>
-                                            <div class="bottom-data">
-                                                <!--<img src="img/heart.png" class="bottom-icon">-->
-                                                <div class="content-data"><img src="img/heart.png" class="bottom-icon">  33</div>
-                                                <div class="content-data"><img src="img/comment.png" class="bottom-icon">  54</div>
-                                                <div class="content-data"><img src="img/share.png" class="bottom-icon"></div>
-                                                <div class="content-data"><img src="img/bookmark.png" class="bottom-icon1"></div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--Weekend-->
-                        <div id="tab3" class="page-content tab">
-                            <div class="content-block custom-content">
-                                <!--the second card for Roger-->
-                                <div class="card">
-                                    <div class="card-content custom-card">
-                                        <div class="card-top">
-                                            <div class="top-image2"></div>
-                                            <div class="top-name">
-                                                <div class="first-name">Roger Saanrinen</div>
-                                                <div class="top-date">March 29</div>
-                                            </div>
-                                            <div class="top-right">
-                                                <img src="img/arrow.png" class="top-arrow">
-                                                <div class="top-tag">Tagged in Photography</div>
-                                            </div>
-
-                                        </div>
-
-                                        <img src="img/trip2washington.jpg" width="100%">
-                                        <div class="card-bottom">
-                                            <div class="bottom-location">Best of Sherry Blossom Views in DC</div>
-                                            <div class="bottom-data">
-                                                <!--<img src="img/heart.png" class="bottom-icon">-->
-                                                <div class="content-data"><img src="img/heart.png" class="bottom-icon">  32</div>
-                                                <div class="content-data"><img src="img/comment.png" class="bottom-icon">  11</div>
-                                                <div class="content-data"><img src="img/share.png" class="bottom-icon"></div>
-                                                <div class="content-data"><img src="img/bookmark.png" class="bottom-icon1"></div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--Following-->
-                        <div id="tab4" class="page-content tab">
-                            <div class="content-block custom-content">
-                                <!--the fifth card for Mei-->
-                                <div class="card">
-                                    <div class="card-content custom-card">
-                                        <div class="card-top">
-                                            <div class="top-image5"></div>
-                                            <div class="top-name">
-                                                <div class="first-name">Mei Sung</div>
-                                                <div class="top-date">Feb 2</div>
-                                            </div>
-                                            <div class="top-right">
-                                                <img src="img/arrow.png" class="top-arrow">
-                                                <div class="top-tag">Tagged in Dining</div>
-                                            </div>
-
-                                        </div>
-
-                                        <img src="img/trip5bangkok.jpg" width="100%">
-                                        <div class="card-bottom">
-                                            <div class="bottom-location">Amazing Floating Market in Thailand</div>
-                                            <div class="bottom-data">
-                                                <!--<img src="img/heart.png" class="bottom-icon">-->
-                                                <div class="content-data"><img src="img/heart.png" class="bottom-icon">  23</div>
-                                                <div class="content-data"><img src="img/comment.png" class="bottom-icon">  13</div>
-                                                <div class="content-data"><img src="img/share.png" class="bottom-icon"></div>
-                                                <div class="content-data"><img src="img/bookmarked.png" class="bottom-icon1"></div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-</div>
-
-<!-- Search page-->
-<div id="view-2" class="view tab">
-
-    <div class="navbar">
-      <div class="navbar-inner navbar-on-center" style="background-color:white;">
-        <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
-        <!-- Search bar -->
-        <form style="background-color:white;" id="searchBox" class="searchbar searchbar-init center sliding " data-search-list=".list-block-search" data-search-in=".item-title" data-found=".searchbar-found" data-not-found=".searchbar-not-found">
-            <div class="searchbar-input">
-                <input type="search" placeholder="Where do you want to go?">
-                <a href="#" class="searchbar-clear"></a>
-            </div>
-            <!-- remove cancel button when click at search bar -->
-            <!-- <a href="#" class="searchbar-cancel">Cancel</a> -->
-            <div class="right">
-                <a href="filter.html" class="link-theme">Filter</a>
-            </div>
-        </form>
-<!--         <div class="searchbar-overlay">
-</div> -->
-
-<!-- End Search bar -->
-</div>
-</div>
-
-
-<div class="pages navbar-through toolbar-through">
-    <div data-page="index-2" class="page">
-        <div class="page-content">
-
-            <div class="list-block cards-list custom-content search-card subtractMargin">
-                <ul class="">
-                    <li class="card ">
-                        <div class="card-header searchFont">Search Nearby
-                            <br>
-                            Philadelphia PA
-                            <div class="right"><img style="width:50%;" src="img/navigation.png"></div>
-
-                        </div>
-
-                    </li>
-
-                    <div class="searchFont"><span>Recent Searches</span></div>
-                    
-                    <li class="card">
-                        <div class="card-content">
-                            <div class="card-content-inner">Atlantis</div>
-                        </div>
-                        <div class="card-content">
-                            <div class="card-content-inner">Miami</div>
-                        </div>
-                        <div class="card-content">
-                            <div class="card-content-inner">Bangkok</div>
-                        </div>
-                        <div class="card-content">
-                            <div class="card-content-inner">Tokyo</div>
-                        </div>
-                        <div class="card-content">
-                            <div class="card-content-inner">Spain</div>
-                        </div>
-                        <div class="card-content">
-                            <div class="card-content-inner">San Francisco</div>
-                        </div>
-                    </li>
-
-                </ul>
-            </div>
-
-        </div>
-    </div>
-</div>
-</div>
-<!-- Bookmarks page -->
-<div id="view-3" class="view tab">
-  <div class="pages">
-      <div data-page="index-3" class="page">
-          <!-- Search bar -->
-          <form style="background-color:white;" class="searchbar searchbar-init" data-search-list=".list-block-search" data-search-in=".item-title" data-found=".searchbar-found" data-not-found=".searchbar-not-found">
-            <div class="searchbar-input">
-                <input type="search" placeholder="Search in bookmarks">
-                <a href="#" class="searchbar-clear"></a>
-            </div>
-            <!-- remove cancel button when click at search bar -->
-            <!-- <a href="#" class="searchbar-cancel">Cancel</a> -->
-        </form>
-        <div class="searchbar-overlay"></div>
-        <!-- End Search bar -->
-        <div class="page-content">
-            <div class="content-block custom-content subtractMargin">
-                <!--the fourth card for Luella-->
-                <div class="card">
-                    <div class="card-content custom-card">
-                        <div class="card-top">
-                            <div class="top-image4"></div>
-                            <div class="top-name">
-                                <div class="first-name">Luella Wilmer</div>
-                                <div class="top-date">Feb 21</div>
-                            </div>
-                            <div class="top-right">
-                                <img src="img/arrow.png" class="top-arrow">
-                                <div class="top-tag">Tagged in Honeymoon</div>
-                            </div>
-
-                        </div>
-
-                        <img src="img/trip4italy.jpg" width="100%">
-                        <div class="card-bottom">
-                            <div class="bottom-location">Romantic Guide in Venice</div>
-                            <div class="bottom-data">
-                                <!--<img src="img/heart.png" class="bottom-icon">-->
-                                <div class="content-data"><img src="img/heart.png" class="bottom-icon">  47</div>
-                                <div class="content-data"><img src="img/comment.png" class="bottom-icon">  95</div>
-                                <div class="content-data"><img src="img/share.png" class="bottom-icon"></div>
-                                <div class="content-data"><img src="img/bookmarked.png" class="bottom-icon1"></div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <!--the fifth card for Mei-->
-                <div class="card">
-                    <div class="card-content custom-card">
-                        <div class="card-top">
-                            <div class="top-image5"></div>
-                            <div class="top-name">
-                                <div class="first-name">Mei Sung</div>
-                                <div class="top-date">Feb 2</div>
-                            </div>
-                            <div class="top-right">
-                                <img src="img/arrow.png" class="top-arrow">
-                                <div class="top-tag">Tagged in Dining</div>
-                            </div>
-
-                        </div>
-
-                        <img src="img/trip5bangkok.jpg" width="100%">
-                        <div class="card-bottom">
-                            <div class="bottom-location">Amazing Floating Market in Thailand</div>
-                            <div class="bottom-data">
-                                <!--<img src="img/heart.png" class="bottom-icon">-->
-                                <div class="content-data"><img src="img/heart.png" class="bottom-icon">  23</div>
-                                <div class="content-data"><img src="img/comment.png" class="bottom-icon">  13</div>
-                                <div class="content-data"><img src="img/share.png" class="bottom-icon"></div>
-                                <div class="content-data"><img src="img/bookmarked.png" class="bottom-icon1"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</div>
-</div>
-<!-- Activities Page -->
-<div id="view-4" class="view tab">
-    <div class="pages navbar-fixed">
-      <div data-page="index-4" class="page">
-        <div class="navbar">
-          <div class="navbar-inner whiteBackground">
-            <div class="center navHeader">Activities</div>
-        </div>
-    </div>
-    <div class="page-content">
-      <div class="content-block tablet-inset subtractMargin">
-        <div class="content-block-inner">
-            <div class="top-image"></div>
-            <div class="activity"> <span class="link-theme">Alexa Roach</span> loves your trip <b>Best of Sherry Blossom Views in DC</b><br>
-                <img src="icons/heartSelected.png" class="heart-icon"><span class="subTitle">July 23</span></div>
-            </div>
-            <div class="content-block-inner">
-                <div class="top-image4"></div>
-                <div class="activity"> <span class="link-theme">Luella Wilmer</span> loves your trip <b>Best of Sherry Blossom Views in DC</b><br>
-                    <img src="icons/heartSelected.png" class="heart-icon"><span class="subTitle">June 5</span></div>
-                </div>
-                <div class="content-block-inner">
-                    <div class="top-image3"></div>
-                    <div class="activity"> <span class="link-theme">Bernard Alvey</span> commented your trip <b>Best of Sherry Blossom Views in DC</b><br>
-                        <img src="icons/commented.png" class="heart-icon"><span class="subTitle">April 19</span></div>
-                    </div>
-                    <div class="content-block-inner">
-                        <div class="top-image5"></div>
-                        <div class="activity"> <span class="link-theme">Mei Sung</span> loves your trip <b>Best of Sherry Blossom Views in DC</b><br>
-                            <img src="icons/heartSelected.png" class="heart-icon"><span class="subTitle">April 18</span></div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Me Page -->
-    <div id="view-5" class="view view-main tab">
-      <!-- Pages-->
-      <div class="pages">
-          <!-- Page, data-page contains page name-->
-          <div data-page="index-5" class="page">
-              <!-- Scrollable page content-->
-              <div class="page-content">
-
-                <img src="img/YellowStoneWinter2.jpg" class="coverimg">
-                <div class="coverOverlay">
-                    <div class="editProfile"></div>
-                    <div class="profilePic"></div>
-                    <div class="first-name">Roger Saanrinen</div>
-
-                    <table class="profileTable profileLabel">
-                      <tr style="margin-bottom: 0;">
-                        <th class="tablePadding">Trip Posted</th>
-                        <th class="tablePadding borderLR">Follower</th>
-                        <th class="tablePadding">Following</th>
-                    </tr>
-                    <tr class="profileNum">
-                        <td>1</td>
-                        <td class="borderLR">12</td>
-                        <td>3</td>
-                    </tr>
-                </table>
-            </div>
-
-            <a href="createtrip.html" class="profileBtn">Create My Trip Experience<i><span class="iconadd"></span></i></a>
-
-            <a href="drafttrip.html" class="profileBtn">My Draft Trip<i><span class="iconbadge"></span></i></a>
-
-            <div class="custom-content" style="margin-top: 2vw;">
-                <div class="card">
-                    <div class="card-content custom-card">
-                        <div class="card-top">
-                            <div class="top-image2"></div>
-                            <div class="top-name">
-                                <div class="first-name">Roger Saanrinen</div>
-                                <div class="top-date">March 29 <i><span class="publicIcon"></span></i></div>
-
-                            </div>
-                            <div class="top-right">
-                                <img src="img/arrow.png" class="top-arrow">
-                                <div class="top-tag">Tagged in Photography</div>
-                            </div>
-
-                        </div>
-                        <a href="tripDC.html">
-                            <img src="img/trip2washington.jpg" width="100%">
-                        </a>
-                        <div class="card-bottom">
-                            <div class="bottom-location">Best of Sherry Blossom Views in DC</div>
-                            <div class="bottom-data">
-                                <!--<img src="img/heart.png" class="bottom-icon">-->
-                                <div class="content-data"><img src="img/heart.png" class="bottom-icon">  32</div>
-                                <div class="content-data"><img src="img/comment.png" class="bottom-icon">  11</div>
-                                <div class="content-data"><img src="img/share.png" class="bottom-icon"></div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-              <!-- <div class="content-block-title">Welcome</div>
-              <div class="content-block">
-                  <p>This is an example of tab bar application layout. The main point of such tabbed layout is that each tab contains independent view with its own routing and navigation.</p>
-                  <p>Each tab/view may have different layout, different navbar type (dynamic, fixed or static) or without navbar like this tab.</p>
-                  <p>And of course, your favorite panels are still here: <a href="#" class="open-panel">left</a> and  <a href="#" data-panel="right" class="open-panel">right</a></p>
-                  <p>Icons and their labels in tab bar below are just for example and don't related to their content.</p>
-              </div> -->
-          </div>
-      </div>
-  </div>
-</div>
-
-<!-- Bottom Tabbar-->
-<div class="toolbar tabbar tabbar-labels">
-    <div class="toolbar-inner">
-        <a href="#view-1" class="tab-link active"><img src="img/navbar-tripfeedSelected.png"><span class="tabbar-label">Trips Feed</span></a>
-        <a href="#view-2" class="tab-link"><img src="img/navbar-searchSelected.png"><span class="tabbar-label">Search</span></a>
-        <a href="#view-3" class="tab-link"><img src="img/navbar-bookmarkSelected.png"><span class="tabbar-label">Bookmarks</span></a>
-        <a href="#view-4" class="tab-link"><img src="img/navbar-activitiesSelected.png"><span class="tabbar-label">Activities</span></a>
-        <a href="#view-5" class="tab-link"><img src="img/navbar-meSelected.png"><span class="tabbar-label">Me</span></a>
-    </div>
-</div>
-</div>
-<!-- Path to Framework7 Library JS-->
-<script type="text/javascript" src="js/framework7.min.js"></script>
-<!-- Path to your app js-->
-<script type="text/javascript" src="js/tripper.js"></script>
-
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
-</body>
-</html>
+	<!-- Options Popover -->
+	<div class="popover popover-createoptions">
+		<div class="popover-angle" style="display: none;"></div>
+		<div class="popover-inner">
+			<div class="list-block">
+				<ul>
+					<li><a href="#" class="list-button item-link" style="color: #4A4A4A;">Save Draft</a></li>
+					<li><a href="#" class="list-button item-link" style="color: #4A4A4A;">Publish</a></li>
+					<li><a href="#" class="list-button item-link" style="color: #FE4B38; text-decoration: bold"> <i><span class="trashIcon"></span></i>Delete Trip</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- Toolbar Popover -->
+	<div id="popTool" class="popover popover-moretools">
+		<div class="popover-angle" style="display: none;"></div>
+		<div class="popover-inner">
+			<div class="list-block">
+				<ul>
+					<li><a href="#" class="list-button item-link" style="color: #4A4A4A; display: inline-block;"><i><span class="globeIcon"></span></i>Set Public</a>
+						<label class="label-switch" style="display: inline-block;">
+							<input type="checkbox" checked="checked" style="padding-bottom: 2vw;">
+							<div class="checkbox"></div>
+						</label>
+					</li>
+					<li><a href="#" class="list-button item-link" style="color: #4A4A4A;"><i><span class="DayIcon"></span></i>Add Day</a></li>
+					<li><a href="#" class="list-button item-link" style="color: #4A4A4A;"><i><span class="videoIcon"></span></i>Add Video</a></li>
+
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- End Popover -->
+
+	<!-- Status bar overlay for fullscreen mode-->
+	<div class="statusbar-overlay"></div>
+	<!-- Panels overlay-->
+	<div class="panel-overlay"></div>
+	<!-- Left panel with reveal effect-->
+	<div class="panel panel-left panel-reveal">
+		<div class="content-block">
+			<p>Left panel content goes here</p>
+		</div>
+	</div>
+	<!-- Right panel with cover effect-->
+	<div class="panel panel-right panel-cover">
+		<div class="content-block">
+			<p>Right panel content goes here</p>
+		</div>
+	</div>
+	<!-- Views, and they are tabs-->
+	<!-- We need to set "toolbar-through" class on it to keep space for our tab bar-->
+	<div class="views tabs toolbar-through">
+		<!-- Your first view, it is also a .tab and should have "active" class to make it visible by default-->
+		<div id="view-1" class="view view-main tab active">
+			<!-- Pages-->
+			<div class="pages">
+				<!-- Page, data-page contains page name-->
+				<div data-page="index-1" class="page">
+					<!-- Scrollable page content-->
+					<div class="page-content">
+
+						<!--banner image-->
+						<div style="background-color:white;">
+							<img src="img/banner.png" class="banner-img">
+							<p class="banner-text">Hello, Roger. we found<br>some trips you might like.</p>
+						</div>
+						<div class="blank-space">
+						</div>
+						<!--tab bar configuration-->
+						<div class="navbar navbar-home">
+							<div class="subnavbar sliding">
+								<div class="buttons-row">
+									<a href="#tab1" class="button active tab-link">Recent</a>
+									<a href="#tab2" class="button tab-link">Popular</a>
+									<a href="#tab3" class="button tab-link">Weekend</a>
+									<a href="#tab4" class="button tab-link">Following</a>
+								</div>
+							</div>
+						</div>
+
+						<!--tab bar content-->
+						<div class="pages navbar-through">
+							<div  class="page with-subnavbar">
+								<div class="tabs-animated-wrap">
+									<div class="tabs">
+
+										<!--the first tab content-->
+										<div id="tab1" class="page-content tab active">
+											<div class="content-block custom-content">
+
+												<!--the first card for Alexa-->
+												<div class="card">
+													<div class="card-content custom-card">
+														<div class="card-top">
+															<div class="top-image"></div>
+															<div class="top-name">
+																<div class="first-name">Alexa Roach</div>
+																<div class="top-date">June 23</div>
+															</div>
+															<div class="top-right">
+																<img src="img/arrow.png" class="top-arrow">
+																<div class="top-tag">Tagged in Nature</div>
+															</div>
+
+														</div>
+														<img src="img/trip1yosemite.jpg" width="100%">
+														<div class="card-bottom">
+															<div class="bottom-location">Road Trip in Yosemite, CA</div>
+															<div class="bottom-data">
+																<!--<img src="img/heart.png" class="bottom-icon">-->
+																<div class="content-data"><img src="img/heart.png" class="bottom-icon">  33</div>
+																<div class="content-data"><img src="img/comment.png" class="bottom-icon">  54</div>
+																<div class="content-data"><img src="img/share.png" class="bottom-icon"></div>
+																<div class="content-data"><img src="img/bookmark.png" class="bottom-icon1"></div>
+															</div>
+														</div>
+
+													</div>
+												</div>
+
+
+												<!--the ad-->
+												<div class="card">
+													<div class="card-content custom-card">
+														<img src="img/SouthwestAd.jpg" width="100%">
+													</div>
+												</div>
+
+												<!--the second card for Roger-->
+												<div class="card">
+													<div class="card-content custom-card">
+														<div class="card-top">
+															<div class="top-image2"></div>
+															<div class="top-name">
+																<div class="first-name">Roger Saanrinen</div>
+																<div class="top-date">March 29</div>
+															</div>
+															<div class="top-right">
+																<img src="img/arrow.png" class="top-arrow">
+																<div class="top-tag">Tagged in Photography</div>
+															</div>
+
+														</div>
+														<a href="tripDC.html">
+															<img src="img/trip2washington.jpg" width="100%">
+														</a>
+														<div class="card-bottom">
+															<div class="bottom-location">Best of Sherry Blossom Views in DC</div>
+															<div class="bottom-data">
+																<!--<img src="img/heart.png" class="bottom-icon">-->
+																<div class="content-data"><img src="img/heart.png" class="bottom-icon">  32</div>
+																<div class="content-data"><img src="img/comment.png" class="bottom-icon">  11</div>
+																<div class="content-data"><img src="img/share.png" class="bottom-icon"></div>
+																<div class="content-data"><img src="img/bookmark.png" class="bottom-icon1"></div>
+															</div>
+														</div>
+
+													</div>
+												</div>
+
+												<!--the third card for Bernard-->
+												<div class="card">
+													<div class="card-content custom-card">
+														<div class="card-top">
+															<div class="top-image3"></div>
+															<div class="top-name">
+																<div class="first-name">Bernard Alvey</div>
+																<div class="top-date">May 5</div>
+															</div>
+															<div class="top-right">
+																<img src="img/arrow.png" class="top-arrow">
+																<div class="top-tag">Tagged in Backpacking</div>
+															</div>
+
+														</div>
+
+														<img src="img/trip3santorini.jpg" width="100%">
+														<div class="card-bottom">
+															<div class="bottom-location">Backpack Guide in Santorini, Greece</div>
+															<div class="bottom-data">
+																<!--<img src="img/heart.png" class="bottom-icon">-->
+																<div class="content-data"><img src="img/heart.png" class="bottom-icon">  23</div>
+																<div class="content-data"><img src="img/comment.png" class="bottom-icon">  49</div>
+																<div class="content-data"><img src="img/share.png" class="bottom-icon"></div>
+																<div class="content-data"><img src="img/bookmark.png" class="bottom-icon1"></div>
+															</div>
+														</div>
+
+													</div>
+												</div>
+
+												<!--the fourth card for Luella-->
+												<div class="card">
+													<div class="card-content custom-card">
+														<div class="card-top">
+															<div class="top-image4"></div>
+															<div class="top-name">
+																<div class="first-name">Luella Wilmer</div>
+																<div class="top-date">Feb 21</div>
+															</div>
+															<div class="top-right">
+																<img src="img/arrow.png" class="top-arrow">
+																<div class="top-tag">Tagged in Honeymoon</div>
+															</div>
+
+														</div>
+
+														<img src="img/trip4italy.jpg" width="100%">
+														<div class="card-bottom">
+															<div class="bottom-location">Romantic Guide in Venice</div>
+															<div class="bottom-data">
+																<!--<img src="img/heart.png" class="bottom-icon">-->
+																<div class="content-data"><img src="img/heart.png" class="bottom-icon">  47</div>
+																<div class="content-data"><img src="img/comment.png" class="bottom-icon">  95</div>
+																<div class="content-data"><img src="img/share.png" class="bottom-icon"></div>
+																<div class="content-data"><img src="img/bookmarked.png" class="bottom-icon1"></div>
+															</div>
+														</div>
+
+													</div>
+												</div>
+
+												<!--the fifth card for Mei-->
+												<div class="card">
+													<div class="card-content custom-card">
+														<div class="card-top">
+															<div class="top-image5"></div>
+															<div class="top-name">
+																<div class="first-name">Mei Sung</div>
+																<div class="top-date">Feb 2</div>
+															</div>
+															<div class="top-right">
+																<img src="img/arrow.png" class="top-arrow">
+																<div class="top-tag">Tagged in Dining</div>
+															</div>
+
+														</div>
+
+														<img src="img/trip5bangkok.jpg" width="100%">
+														<div class="card-bottom">
+															<div class="bottom-location">Amazing Floating Market in Thailand</div>
+															<div class="bottom-data">
+																<!--<img src="img/heart.png" class="bottom-icon">-->
+																<div class="content-data"><img src="img/heart.png" class="bottom-icon">  23</div>
+																<div class="content-data"><img src="img/comment.png" class="bottom-icon">  13</div>
+																<div class="content-data"><img src="img/share.png" class="bottom-icon"></div>
+																<div class="content-data"><img src="img/bookmarked.png" class="bottom-icon1"></div>
+															</div>
+														</div>
+
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<!--Popular-->
+										<div id="tab2" class="page-content tab">
+											<div class="content-block custom-content">
+												<!--the fourth card for Luella-->
+												<div class="card">
+													<div class="card-content custom-card">
+														<div class="card-top">
+															<div class="top-image4"></div>
+															<div class="top-name">
+																<div class="first-name">Luella Wilmer</div>
+																<div class="top-date">Feb 21</div>
+															</div>
+															<div class="top-right">
+																<img src="img/arrow.png" class="top-arrow">
+																<div class="top-tag">Tagged in Honeymoon</div>
+															</div>
+
+														</div>
+
+														<img src="img/trip4italy.jpg" width="100%">
+														<div class="card-bottom">
+															<div class="bottom-location">Romantic Guide in Venice</div>
+															<div class="bottom-data">
+																<!--<img src="img/heart.png" class="bottom-icon">-->
+																<div class="content-data"><img src="img/heart.png" class="bottom-icon">  47</div>
+																<div class="content-data"><img src="img/comment.png" class="bottom-icon">  95</div>
+																<div class="content-data"><img src="img/share.png" class="bottom-icon"></div>
+																<div class="content-data"><img src="img/bookmarked.png" class="bottom-icon1"></div>
+															</div>
+														</div>
+
+													</div>
+												</div>
+
+												<!--the first card for Alexa-->
+												<div class="card">
+													<div class="card-content custom-card">
+														<div class="card-top">
+															<div class="top-image"></div>
+															<div class="top-name">
+																<div class="first-name">Alexa Roach</div>
+																<div class="top-date">June 23</div>
+															</div>
+															<div class="top-right">
+																<img src="img/arrow.png" class="top-arrow">
+																<div class="top-tag">Tagged in Nature</div>
+															</div>
+
+														</div>
+
+														<img src="img/trip1yosemite.jpg" width="100%">
+														<div class="card-bottom">
+															<div class="bottom-location">Road Trip in Yosemite, CA</div>
+															<div class="bottom-data">
+																<!--<img src="img/heart.png" class="bottom-icon">-->
+																<div class="content-data"><img src="img/heart.png" class="bottom-icon">  33</div>
+																<div class="content-data"><img src="img/comment.png" class="bottom-icon">  54</div>
+																<div class="content-data"><img src="img/share.png" class="bottom-icon"></div>
+																<div class="content-data"><img src="img/bookmark.png" class="bottom-icon1"></div>
+															</div>
+														</div>
+
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<!--Weekend-->
+										<div id="tab3" class="page-content tab">
+											<div class="content-block custom-content">
+												<!--the second card for Roger-->
+												<div class="card">
+													<div class="card-content custom-card">
+														<div class="card-top">
+															<div class="top-image2"></div>
+															<div class="top-name">
+																<div class="first-name">Roger Saanrinen</div>
+																<div class="top-date">March 29</div>
+															</div>
+															<div class="top-right">
+																<img src="img/arrow.png" class="top-arrow">
+																<div class="top-tag">Tagged in Photography</div>
+															</div>
+
+														</div>
+
+														<img src="img/trip2washington.jpg" width="100%">
+														<div class="card-bottom">
+															<div class="bottom-location">Best of Sherry Blossom Views in DC</div>
+															<div class="bottom-data">
+																<!--<img src="img/heart.png" class="bottom-icon">-->
+																<div class="content-data"><img src="img/heart.png" class="bottom-icon">  32</div>
+																<div class="content-data"><img src="img/comment.png" class="bottom-icon">  11</div>
+																<div class="content-data"><img src="img/share.png" class="bottom-icon"></div>
+																<div class="content-data"><img src="img/bookmark.png" class="bottom-icon1"></div>
+															</div>
+														</div>
+
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<!--Following-->
+										<div id="tab4" class="page-content tab">
+											<div class="content-block custom-content">
+												<!--the fifth card for Mei-->
+												<div class="card">
+													<div class="card-content custom-card">
+														<div class="card-top">
+															<div class="top-image5"></div>
+															<div class="top-name">
+																<div class="first-name">Mei Sung</div>
+																<div class="top-date">Feb 2</div>
+															</div>
+															<div class="top-right">
+																<img src="img/arrow.png" class="top-arrow">
+																<div class="top-tag">Tagged in Dining</div>
+															</div>
+
+														</div>
+
+														<img src="img/trip5bangkok.jpg" width="100%">
+														<div class="card-bottom">
+															<div class="bottom-location">Amazing Floating Market in Thailand</div>
+															<div class="bottom-data">
+																<div class="content-data"><img src="img/heart.png" class="bottom-icon">  23</div>
+																<div class="content-data"><img src="img/comment.png" class="bottom-icon">  13</div>
+																<div class="content-data"><img src="img/share.png" class="bottom-icon"></div>
+																<div class="content-data"><img src="img/bookmarked.png" class="bottom-icon1"></div>
+															</div>
+														</div>
+
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Search page-->
+		<div id="view-2" class="view tab">
+
+			<div class="navbar">
+				<div class="navbar-inner navbar-on-center" style="background-color:white;">
+					<!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
+					<!-- Search bar -->
+					<form style="background-color:white;" id="searchBox" class="searchbar searchbar-init center sliding " data-search-list=".list-block-search" data-search-in=".item-title" data-found=".searchbar-found" data-not-found=".searchbar-not-found">
+						<div class="searchbar-input">
+							<input type="search" placeholder="Where do you want to go?">
+							<a href="#" class="searchbar-clear"></a>
+						</div>
+						<!-- remove cancel button when click at search bar -->
+						<!-- <a href="#" class="searchbar-cancel">Cancel</a> -->
+						<div class="right">
+							<a href="filter.html" class="link-theme">Filter</a>
+						</div>
+					</form>
+					<!-- End Search bar -->
+				</div>
+			</div>
+
+
+			<div class="pages navbar-through toolbar-through">
+				<div data-page="index-2" class="page">
+					<div class="page-content">
+
+						<div class="list-block cards-list custom-content search-card subtractMargin">
+							<ul class="">
+								<li class="card ">
+									<div class="card-header searchFont">Search Nearby
+										<br>
+										Philadelphia PA
+										<div class="right"><img style="width:50%;" src="img/navigation.png"></div>
+
+									</div>
+
+								</li>
+
+								<div class="searchFont"><span>Recent Searches</span></div>
+								
+								<li class="card">
+									<div class="card-content">
+										<div class="card-content-inner">Atlantis</div>
+									</div>
+									<div class="card-content">
+										<div class="card-content-inner">Miami</div>
+									</div>
+									<div class="card-content">
+										<div class="card-content-inner">Bangkok</div>
+									</div>
+									<div class="card-content">
+										<div class="card-content-inner">Tokyo</div>
+									</div>
+									<div class="card-content">
+										<div class="card-content-inner">Spain</div>
+									</div>
+									<div class="card-content">
+										<div class="card-content-inner">San Francisco</div>
+									</div>
+								</li>
+
+							</ul>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Bookmarks page -->
+		<div id="view-3" class="view tab">
+			<div class="pages">
+				<div data-page="index-3" class="page">
+					<!-- Search bar -->
+					<form style="background-color:white;" class="searchbar searchbar-init" data-search-list=".list-block-search" data-search-in=".item-title" data-found=".searchbar-found" data-not-found=".searchbar-not-found">
+						<div class="searchbar-input">
+							<input type="search" placeholder="Search in bookmarks">
+							<a href="#" class="searchbar-clear"></a>
+						</div>
+					</form>
+					<div class="searchbar-overlay"></div>
+					<!-- End Search bar -->
+					<div class="page-content">
+						<div class="content-block custom-content subtractMargin">
+							<!--the fourth card for Luella-->
+							<div class="card">
+								<div class="card-content custom-card">
+									<div class="card-top">
+										<div class="top-image4"></div>
+										<div class="top-name">
+											<div class="first-name">Luella Wilmer</div>
+											<div class="top-date">Feb 21</div>
+										</div>
+										<div class="top-right">
+											<img src="img/arrow.png" class="top-arrow">
+											<div class="top-tag">Tagged in Honeymoon</div>
+										</div>
+
+									</div>
+
+									<img src="img/trip4italy.jpg" width="100%">
+									<div class="card-bottom">
+										<div class="bottom-location">Romantic Guide in Venice</div>
+										<div class="bottom-data">
+											<!--<img src="img/heart.png" class="bottom-icon">-->
+											<div class="content-data"><img src="img/heart.png" class="bottom-icon">  47</div>
+											<div class="content-data"><img src="img/comment.png" class="bottom-icon">  95</div>
+											<div class="content-data"><img src="img/share.png" class="bottom-icon"></div>
+											<div class="content-data"><img src="img/bookmarked.png" class="bottom-icon1"></div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+							<!--the fifth card for Mei-->
+							<div class="card">
+								<div class="card-content custom-card">
+									<div class="card-top">
+										<div class="top-image5"></div>
+										<div class="top-name">
+											<div class="first-name">Mei Sung</div>
+											<div class="top-date">Feb 2</div>
+										</div>
+										<div class="top-right">
+											<img src="img/arrow.png" class="top-arrow">
+											<div class="top-tag">Tagged in Dining</div>
+										</div>
+
+									</div>
+
+									<img src="img/trip5bangkok.jpg" width="100%">
+									<div class="card-bottom">
+										<div class="bottom-location">Amazing Floating Market in Thailand</div>
+										<div class="bottom-data">
+											<!--<img src="img/heart.png" class="bottom-icon">-->
+											<div class="content-data"><img src="img/heart.png" class="bottom-icon">  23</div>
+											<div class="content-data"><img src="img/comment.png" class="bottom-icon">  13</div>
+											<div class="content-data"><img src="img/share.png" class="bottom-icon"></div>
+											<div class="content-data"><img src="img/bookmarked.png" class="bottom-icon1"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Activities Page -->
+		<div id="view-4" class="view tab">
+			<div class="pages navbar-fixed">
+				<div data-page="index-4" class="page">
+					<div class="navbar">
+						<div class="navbar-inner whiteBackground">
+							<div class="center navHeader">Activities</div>
+						</div>
+					</div>
+					<div class="page-content">
+						<div class="content-block tablet-inset subtractMargin">
+							<div class="content-block-inner">
+								<div class="top-image"></div>
+								<div class="activity"> <span class="link-theme">Alexa Roach</span> loves your trip <b>Best of Sherry Blossom Views in DC</b><br>
+									<img src="icons/heartSelected.png" class="heart-icon"><span class="subTitle">July 23</span></div>
+								</div>
+								<div class="content-block-inner">
+									<div class="top-image4"></div>
+									<div class="activity"> <span class="link-theme">Luella Wilmer</span> loves your trip <b>Best of Sherry Blossom Views in DC</b><br>
+										<img src="icons/heartSelected.png" class="heart-icon"><span class="subTitle">June 5</span></div>
+									</div>
+									<div class="content-block-inner">
+										<div class="top-image3"></div>
+										<div class="activity"> <span class="link-theme">Bernard Alvey</span> commented your trip <b>Best of Sherry Blossom Views in DC</b><br>
+											<img src="icons/commented.png" class="heart-icon"><span class="subTitle">April 19</span></div>
+										</div>
+										<div class="content-block-inner">
+											<div class="top-image5"></div>
+											<div class="activity"> <span class="link-theme">Mei Sung</span> loves your trip <b>Best of Sherry Blossom Views in DC</b><br>
+												<img src="icons/heartSelected.png" class="heart-icon"><span class="subTitle">April 18</span></div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Me Page -->
+						<div id="view-5" class="view view-main tab">
+							<!-- Pages-->
+							<div class="pages">
+								<!-- Page, data-page contains page name-->
+								<div data-page="index-5" class="page">
+									<!-- Scrollable page content-->
+									<div class="page-content">
+
+										<img src="img/YellowStoneWinter2.jpg" class="coverimg">
+										<div class="coverOverlay">
+											<div class="editProfile"></div>
+											<div class="profilePic"></div>
+											<div class="first-name">Roger Saanrinen</div>
+
+											<table class="profileTable profileLabel">
+												<tr style="margin-bottom: 0;">
+													<th class="tablePadding">Trip Posted</th>
+													<th class="tablePadding borderLR">Follower</th>
+													<th class="tablePadding">Following</th>
+												</tr>
+												<tr class="profileNum">
+													<td>1</td>
+													<td class="borderLR">12</td>
+													<td>3</td>
+												</tr>
+											</table>
+										</div>
+
+										<a href="createtrip.html" class="profileBtn">Create My Trip Experience<i><span class="iconadd"></span></i></a>
+
+										<a href="drafttrip.html" class="profileBtn">My Draft Trip<i><span class="iconbadge"></span></i></a>
+
+										<div class="custom-content" style="margin-top: 2vw;">
+											<div class="card">
+												<div class="card-content custom-card">
+													<div class="card-top">
+														<div class="top-image2"></div>
+														<div class="top-name">
+															<div class="first-name">Roger Saanrinen</div>
+															<div class="top-date">March 29 <i><span class="publicIcon"></span></i></div>
+
+														</div>
+														<div class="top-right">
+															<img src="img/arrow.png" class="top-arrow">
+															<div class="top-tag">Tagged in Photography</div>
+														</div>
+
+													</div>
+													<img src="img/trip2washington.jpg" width="100%">
+													<div class="card-bottom">
+														<div class="bottom-location">Best of Sherry Blossom Views in DC</div>
+														<div class="bottom-data">
+															<div class="content-data"><img src="img/heart.png" class="bottom-icon">  32</div>
+															<div class="content-data"><img src="img/comment.png" class="bottom-icon">  11</div>
+															<div class="content-data"><img src="img/share.png" class="bottom-icon"></div>
+														</div>
+													</div>
+
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Bottom Tabbar-->
+						<div class="toolbar tabbar tabbar-labels">
+							<div class="toolbar-inner">
+								<a href="#view-1" class="tab-link active"><img src="img/navbar-tripfeedSelected.png"><span class="tabbar-label">Trips Feed</span></a>
+								<a href="#view-2" class="tab-link"><img src="img/navbar-searchSelected.png"><span class="tabbar-label">Search</span></a>
+								<a href="#view-3" class="tab-link"><img src="img/navbar-bookmarkSelected.png"><span class="tabbar-label">Bookmarks</span></a>
+								<a href="#view-4" class="tab-link"><img src="img/navbar-activitiesSelected.png"><span class="tabbar-label">Activities</span></a>
+								<a href="#view-5" class="tab-link"><img src="img/navbar-meSelected.png"><span class="tabbar-label">Me</span></a>
+							</div>
+						</div>
+					</div>
+					<!-- Path to Framework7 Library JS-->
+					<script type="text/javascript" src="js/framework7.min.js"></script>
+					<!-- Path to your app js-->
+					<script type="text/javascript" src="js/tripper.js"></script>
+
+				</body>
+				</html>
