@@ -1,5 +1,5 @@
-@import url('https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css');
-
+/*@import url('https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css');
+*/
 .whiteBackground{
   background-color: white;
 }
@@ -426,3 +426,10 @@ height: 45vw;
 width: 100%;
 display:inline-block;
 }
+
+.forwardIcon{
+    background: url("../icons/Forward_Chevron.png") no-repeat right;
+    background-size: 3vw;
+    padding-right: 5vw;
+    margin-right: 2vw;
+  }
