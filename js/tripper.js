@@ -55,3 +55,10 @@ function toggle_visibility(id1,id2) {
 	}
 }
 
+function toggle_time() {
+	var e = document.getElementById('tripTime');
+	if(e.style.display == 'none'){
+		e.style.display = 'flex';
+	}
+}
+

@@ -1,104 +1,134 @@
 <!--   <script type="text/javascript" src="js/tripper.js"></script> -->
 
-  <!-- Create Trip Page -->
-  <div class="page no-tabbar">
-    <div class="searchbar whiteBackground">
-      <div class="navbar-inner">
-        <div class="left">
-          <a href="#" class="back link">
-            <!-- <i class="icon icon-arrow-left"></i> -->
-            <!-- <i class="fa fa-angle-left fa-3x fa-fw tripper-fontcolor" aria-hidden="true"></i> -->
-            <i><span class="backwardIcon" style="margin-right: 2vw;"></span></i>
-            <span class="navLeft" style="line-height: 4vw;">Me</span>
-          </a>
-        </div>
-        <div class="center sliding navHeader" style="padding-left: 6vw;">Create Trip</div>
-        <div class="right"><a href="#" class="open-popover link navRight" data-popover=".popover-createoptions">Options <i><span class="optionsicon"></span></i></a></div>
-      </div>
-    </div>
+<!-- Create Trip Page -->
+<div class="page no-tabbar">
+	<div class="searchbar whiteBackground">
+		<div class="navbar-inner">
+			<div class="left">
+				<a href="#" class="back link">
+					<!-- <i class="icon icon-arrow-left"></i> -->
+					<!-- <i class="fa fa-angle-left fa-3x fa-fw tripper-fontcolor" aria-hidden="true"></i> -->
+					<i><span class="backwardIcon" style="margin-right: 2vw;"></span></i>
+					<span class="navLeft" style="line-height: 4vw;">Me</span>
+				</a>
+			</div>
+			<div class="center sliding navHeader" style="padding-left: 6vw;">Create Trip</div>
+			<div class="right"><a href="#" class="open-popover link navRight" data-popover=".popover-createoptions">Options <i><span class="optionsicon"></span></i></a></div>
+		</div>
+	</div>
 
-    <div class="searchbar-overlay"></div>
-    <div class="page-content whiteBackground">
+	<div class="searchbar-overlay"></div>
+	<div class="page-content whiteBackground">
 
-      <!-- Tabs, tabs wrapper -->
-      <div class="tabs">
-        <!-- Overview Tab -->
-        <div id="createTrip1" class="tab active">
-          <div class="page-content">
-            <div style="position: relative;">
-              <div class="upcoverbg"></div> 
-              <a href="#" class="ac-1"><img src="icons/uploadimg.png" class="upcovericon"></a>
-            </div>
-            <div class="content-block subtractMargin" style="margin-bottom: 2vw;">
+		<!-- Tabs, tabs wrapper -->
+		<div class="tabs">
+			<!-- Overview Tab -->
+			<div id="createTrip1" class="tab active">
+				<div class="page-content">
+					<div id="nonCoverPhoto" style="position: relative;">
+						<div class="upcoverbg"></div> 
+						<a href="#" class="ac-1"><img src="icons/uploadimg.png" class="upcovericon"></a>
+					</div>
+					<div class="content-block subtractMargin" style="margin-bottom: 2vw;">
 
-              <p class="createTitle">Trip Title</p>
-              <input type="text" placeholder="" class="createInput">
+						<p class="createTitle">Trip Title</p>
+						<input type="text" placeholder="" class="createInput">
 
-              <p class="createTitle">Trip Category</p>
-              <select id="select-tripCat" name="trip-category">
-                <option></option>
-                <option>Hiking</option>
-                <option>Culture</option>
-                <option>Events and Festival</option>
-                <option>Nature</option>
-                <option>Honeymoon</option>
-                <option>Solo Travel</option>
-                <option>Photography</option>
-                <option>Dining</option>
-              </select>
-              <p class="createTitle">Trip Date Range</p>
-              <input type="text" placeholder="" class="createInput">
-              <p class="createTitle">Trip Overview</p>
-            </div>
-            <textarea class="overviewarea"></textarea>
-          </div>
-        </div>
+						<p class="createTitle">Trip Category</p>
+						<select id="select-tripCat" name="trip-category">
+							<option></option>
+							<option>Hiking</option>
+							<option>Culture</option>
+							<option>Events and Festival</option>
+							<option>Nature</option>
+							<option>Honeymoon</option>
+							<option>Solo Travel</option>
+							<option>Photography</option>
+							<option>Dining</option>
+						</select>
+						<p class="createTitle">Trip Date Range</p>
+						<input type="text" placeholder="" class="createInput">
+						<p class="createTitle">Trip Overview</p>
+					</div>
+					<textarea class="overviewarea"></textarea>
+				</div>
+			</div>
 
-        <!-- Create Trip Tab Day1-->
-        <div id="createTrip2" class="tab">
-          <div class="page-content">
-            <a href="#createTrip1" class="tab-link backOverview" onclick="toggle_visibility('overviewtoolbar','addtriptoolbar');"><i class="fa fa-angle-left fa-lg fa-fw" aria-hidden="true"></i><span>Back to overview</span></a>
-            <div class="dayTabs">
-              <div class="dayHeader1">Day 1</div>
-              <a href="#createTrip3" class="tab-link daynavRight" style="color: white;">Next Day <i class="fa fa-angle-right fa-lg fa-fw" aria-hidden="true"></i></a>
-            </div>
-            <div class="page-content">
-              
-            </div>
-          </div>
-        </div>
-        <!-- Create Trip Tab Day2-->
-        <div id="createTrip3" class="tab">
-          <div class="page-content">
-            <a href="#createTrip1" class="tab-link backOverview" onclick="toggle_visibility('overviewtoolbar','addtriptoolbar');"><i class="fa fa-angle-left fa-lg fa-fw" aria-hidden="true"></i><span>Back to overview</span></a>
-            <div class="dayTabs">
-              <div class="dayHeader2">Day 2</div>
-              <a href="#createTrip2" class="tab-link daynavLeft" style="color: white;"><i class="fa fa-angle-left fa-lg fa-fw" aria-hidden="true"></i>Prev. Day </a>
-            </div>
-            <div class="page-content">
+			<!-- Create Trip Tab Day1-->
+			<div id="createTrip2" class="tab">
+				<div class="page-content">
+					<a href="#createTrip1" class="tab-link backOverview" onclick="toggle_visibility('overviewtoolbar','addtriptoolbar');"><i class="fa fa-angle-left fa-lg fa-fw" aria-hidden="true"></i><span>Back to overview</span></a>
+					<div class="dayTabs">
+						<div class="dayHeader1">Day 1</div>
+						<a href="#createTrip3" class="tab-link daynavRight" style="color: white;">Next Day <i class="fa fa-angle-right fa-lg fa-fw" aria-hidden="true"></i></a>
+					</div>
+					<!-- Manual create trip -->
+					<div class="page-content">
+						<!-- Header icons -->
+						<div class="content-block subMargin10">
+							<div id="tripTime" class="row no-gutter marginTop2vw" style="display: none;">
+								<div class="col-10"><img src="img/clock-morning.png" class="tripIcons"></div>
+								<div class="col-90"><div class="detailHeader">Morning <div class="detailDate">(Dec 1, 2016)</div></div></div>
+							</div>
+							<div id="tripLocation" class="row no-gutter marginTop2vw">
+								<div class="col-10"><img src="img/location.png" class="tripIcons marginTop2vw"></div>
+								<div class="col-80"><div class="detailHeader" >Yellowstone Geyser: Norris Geyser Basin</div></div>
+								<div class="col-10"><img src="img/mapicon.png" class="mapIcon"></div>
+							</div>
+						</div>
+						<img id="tripImageSample" src="img/yellowstonewinter3.jpg" class="tripImage">
 
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+						<div class="content-block detailP">
+							<p>
+								Home to the famous cherry blossom festival, the Tidal Basin area is beautiful, especially in spring. Many of the monuments are located around Tidal Basin as well, making it a nice place for strolls, bike ride, and picnics.
+							</p>
+						</div>
+						<!-- Tips -->
+						<div class="content-block inset">
+							<div class="content-block-inner tips">
+								<div class="row no-gutter">
+									<div class="col-10"><img src="img/tips.png" class="tripIcons"></div>
+									<div class="col-90"><div class="detailHeader">Tips</div></div>
+								</div>
+								<p>Take either a two- or four-person paddle boat ride and see the blossoms from out on the water. Paddle out to the middle of the Tidal Basin for a panoramic shot of the trees. Or, float on to the Jefferson Memorial.
+									Enjoy this unique activity in the shadow of the Jefferson Memorial. Individual and group rentals available, Mar. - Sep., 10 am - 6 pm daily. </p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Create Trip Tab Day2-->
+				<div id="createTrip3" class="tab">
+					<div class="page-content">
+						<a href="#createTrip1" class="tab-link backOverview" onclick="toggle_visibility('overviewtoolbar','addtriptoolbar');"><i class="fa fa-angle-left fa-lg fa-fw" aria-hidden="true"></i><span>Back to overview</span></a>
+						<div class="dayTabs">
+							<div class="dayHeader2">Day 2</div>
+							<a href="#createTrip2" class="tab-link daynavLeft" style="color: white;"><i class="fa fa-angle-left fa-lg fa-fw" aria-hidden="true"></i>Prev. Day </a>
+						</div>
+						<div class="page-content">
 
-    <div id="overviewtoolbar" class="toolbar" style="display: block;">
-      <div class="toolbar-inner" style="height: 50px;">
-        <a href="#" class="link"></a>
-        <a href="#createTrip2" id="next-btn" class="tab-link navRight Display-InlineBlock" onclick="toggle_visibility('overviewtoolbar','addtriptoolbar');" style="padding-bottom: 2vw;">Next <i><span class="forwardIcon"></span></i></a>
-      </div>
-    </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-    <div id="addtriptoolbar" class="toolbar" style="display: none;">
-      <div class="toolbar-inner createToolBar" style="height: 50px;">
-        <a href="#" class="tab-link createTool"><img src="icons/addTime.png"></a>
-        <a href="#" class="tab-link createTool"><img src="icons/addLocation.png"></a>
-        <a href="#" class="tab-link createTool"><img src="icons/addPhoto.png"></a>
-        <a href="#" class="tab-link createTool"><img src="icons/add-Tips.png" style="padding-top:2px; "></a>
-        <a href="#" class="tab-link createTool open-popover"><img src="icons/more.png" style="height: 30px; padding-top: 3px;" data-popover=".popover-moretools"></a>
-      </div>
-    </div>
-  </div> 
+		<div id="overviewtoolbar" class="toolbar" style="display: block;">
+			<div class="toolbar-inner" style="height: 50px;">
+				<a href="#" class="link"></a>
+				<a href="#createTrip2" id="next-btn" class="tab-link navRight Display-InlineBlock" onclick="toggle_visibility('overviewtoolbar','addtriptoolbar');" style="padding-bottom: 2vw;">Next <i><span class="forwardIcon"></span></i></a>
+			</div>
+		</div>
+
+		<div id="addtriptoolbar" class="toolbar" style="display: none;">
+			<div class="toolbar-inner createToolBar" style="height: 50px;">
+				<a href="#" data-picker=".picker-1" class="tab-link createTool open-picker"><img src="icons/addTime.png"></a>
+				<a href="#" data-popup=".popup-location" class="tab-link createTool open-popup"><img src="icons/addLocation.png"></a>
+				<a href="#" data-popup=".popup-photo" class="tab-link createTool open-popup"><img src="icons/addPhoto.png"></a>
+				<a href="#" class="tab-link createTool"><img src="icons/add-Tips.png" style="padding-top:2px; "></a>
+				<a href="#" class="tab-link createTool open-popover"><img src="icons/more.png" style="height: 30px; padding-top: 3px;" data-popover=".popover-moretools"></a>
+			</div>
+		</div>
+	</div> 
 
 
