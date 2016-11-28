@@ -62,3 +62,27 @@ function toggle_time() {
 	}
 }
 
+function toggle_image() {
+	var e = document.getElementById('tripImageSample');
+	if(e.style.display == 'none'){
+		e.style.display = 'block';
+	}
+}
+
+function toggle_location() {
+	var e = document.getElementById('tripLocation');
+	if(e.style.display == 'none'){
+		e.style.display = 'flex';
+	}
+}
+
+function toggle_addTips() {
+	var e = document.getElementById('addTips');
+	if(e.style.display == 'none'){
+		e.style.display = 'block';
+	}
+	else{
+		e.style.display = 'none';
+	}
+
+}

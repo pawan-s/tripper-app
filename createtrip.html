@@ -70,28 +70,26 @@
 								<div class="col-10"><img src="img/clock-morning.png" class="tripIcons"></div>
 								<div class="col-90"><div class="detailHeader">Morning <div class="detailDate">(Dec 1, 2016)</div></div></div>
 							</div>
-							<div id="tripLocation" class="row no-gutter marginTop2vw">
+							<div id="tripLocation" class="row no-gutter marginTop2vw" style="display: none;">
 								<div class="col-10"><img src="img/location.png" class="tripIcons marginTop2vw"></div>
 								<div class="col-80"><div class="detailHeader" >Yellowstone Geyser: Norris Geyser Basin</div></div>
 								<div class="col-10"><img src="img/mapicon.png" class="mapIcon"></div>
 							</div>
 						</div>
-						<img id="tripImageSample" src="img/yellowstonewinter3.jpg" class="tripImage">
+						<img id="tripImageSample" src="img/yellowstonewinter3.jpg" class="tripImage" style="display: none;">
 
-						<div class="content-block detailP">
-							<p>
-								Home to the famous cherry blossom festival, the Tidal Basin area is beautiful, especially in spring. Many of the monuments are located around Tidal Basin as well, making it a nice place for strolls, bike ride, and picnics.
-							</p>
+						<div class="content-block">
+							<textarea class="overviewarea" style="height: 40vw;"></textarea>
 						</div>
 						<!-- Tips -->
-						<div class="content-block inset">
+						<div id="addTips" class="content-block inset" style="display: none;">
 							<div class="content-block-inner tips">
 								<div class="row no-gutter">
 									<div class="col-10"><img src="img/tips.png" class="tripIcons"></div>
-									<div class="col-90"><div class="detailHeader">Tips</div></div>
+									<div class="col-80"><div class="detailHeader">Tips</div></div>
+									<div class="col-10"><a href="#" onclick="toggle_addTips();"><i class="fa fa-times fa-lg fa-fw" aria-hidden="true" style="color: #FE4B38;"></i></a></div>
 								</div>
-								<p>Take either a two- or four-person paddle boat ride and see the blossoms from out on the water. Paddle out to the middle of the Tidal Basin for a panoramic shot of the trees. Or, float on to the Jefferson Memorial.
-									Enjoy this unique activity in the shadow of the Jefferson Memorial. Individual and group rentals available, Mar. - Sep., 10 am - 6 pm daily. </p>
+								<textarea class="overviewarea" style="height: 40vw;"></textarea>
 								</div>
 							</div>
 						</div>
@@ -125,7 +123,7 @@
 				<a href="#" data-picker=".picker-1" class="tab-link createTool open-picker"><img src="icons/addTime.png"></a>
 				<a href="#" data-popup=".popup-location" class="tab-link createTool open-popup"><img src="icons/addLocation.png"></a>
 				<a href="#" data-popup=".popup-photo" class="tab-link createTool open-popup"><img src="icons/addPhoto.png"></a>
-				<a href="#" class="tab-link createTool"><img src="icons/add-Tips.png" style="padding-top:2px; "></a>
+				<a href="#" class="tab-link createTool" onclick="toggle_addTips();"><img src="icons/add-Tips.png" style="padding-top:2px; "></a>
 				<a href="#" class="tab-link createTool open-popover"><img src="icons/more.png" style="height: 30px; padding-top: 3px;" data-popover=".popover-moretools"></a>
 			</div>
 		</div>

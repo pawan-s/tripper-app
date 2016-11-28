@@ -75,19 +75,41 @@
 
 	<!-- Location Popup -->
 	<div class="popup popup-location">
-		<div class="content-block">
-			<p>Add Location</p>
-			<p><a href="#" class="close-popup">Close popup</a></p>
-			<p>Lorem ipsum dolor ...</p>
+
+		<form style="background-color:white;" id="searchBox" class="searchbar searchbar-init center sliding ">
+			<div class="searchbar-input">
+				<input type="search" placeholder="Add location">
+				<a href="#" class="searchbar-clear"></a>
+			</div>
+			<div class="right">
+				<a href="#" class="close-popup link-theme">close</a>
+			</div>
+		</form>
+		<div class="page-content">
+			<div class="list-block cards-list custom-content search-card subtractMargin">	
+
+				<div class="searchFont"><span>Recent Searches</span></div>
+
+				<li class="card">
+					<div class="card-content">
+					<a href="#" class="close-popup" onclick="toggle_location()" style="color: #4A4A4A;"><div class="card-content-inner">Yellowstone Geyser: Norris Geyser Basin</div></a>
+					</div>
+				</li>
+			</div>
 		</div>
 	</div>
 
 	<!-- About Popup -->
 	<div class="popup popup-photo">
-		<div class="content-block">
-			<p>Add Photo from Library</p>
-			<p><a href="#" class="close-popup">Close popup</a></p>
-			<p>Lorem ipsum dolor ...</p>
+		<div class="toolbar">
+			<div class="toolbar-inner">
+				<div class="left" style="color: #FE4B38; text-decoration: bold">Take Photo</div>
+				<div class="center">Photos</div>
+				<div class="right"><a href="#" class="close-popup">Close</a></div>
+			</div>
+		</div>
+		<div clas="page-content">
+		<a href="#" class="close-popup" onclick="toggle_image()"><img src="img/yellowstonewinterSquare.jpg"></a>
 		</div>
 	</div>
   <!-- End Popup -->
