@@ -84,5 +84,13 @@ function toggle_addTips() {
 	else{
 		e.style.display = 'none';
 	}
+}
 
+function toggle_coverPhoto() {
+	var e = document.getElementById('showCoverPhoto');
+	var e2 = document.getElementById('nonCoverPhoto');
+	if(e.style.display == 'none'){
+		e.style.display = 'block';
+		e2.style.display = 'none';
+	}
 }
